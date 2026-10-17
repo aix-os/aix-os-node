@@ -1,0 +1,12 @@
+{
+  "treasury": "alice",
+  "entries": [
+    {
+      "address": "AIXTZ8jMPQW1Mx6pnBhchqLQcmPMSMPJCbkSu",
+      "ip": "127.0.0.1",
+      "amount_aix": 10,
+      "tx_id": "c6e922f5c0cc85c62d98928ad57713a139873fdaeb0f2b913e814685ab15735b",
+      "ts": 1791900761.3706508
+    }
+  ]
+}

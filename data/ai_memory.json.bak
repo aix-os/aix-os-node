@@ -1,0 +1,1020 @@
+{
+  "memories": [
+    {
+      "text": "",
+      "kind": "THOUGHT",
+      "priority": "NORMAL",
+      "tags": [],
+      "session": "",
+      "ts": "",
+      "hash": "",
+      "chain_ref": ""
+    },
+    {
+      "text": "",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "ai",
+        "memory",
+        "core"
+      ],
+      "session": "",
+      "ts": "",
+      "hash": "",
+      "chain_ref": ""
+    },
+    {
+      "text": "",
+      "kind": "LEARNING",
+      "priority": "CRITICAL",
+      "tags": [
+        "contacts",
+        "crypto",
+        "breaking"
+      ],
+      "session": "",
+      "ts": "",
+      "hash": "",
+      "chain_ref": ""
+    },
+    {
+      "text": "",
+      "kind": "LEARNING",
+      "priority": "IMPORTANT",
+      "tags": [
+        "git",
+        "workflow"
+      ],
+      "session": "",
+      "ts": "",
+      "hash": "",
+      "chain_ref": ""
+    },
+    {
+      "text": "Начало сессии",
+      "kind": "SESSION_START",
+      "priority": "NORMAL",
+      "tags": [],
+      "session": "2026-10-12-session",
+      "ts": "2026-10-12T17:49:40Z",
+      "hash": "3f7fd9d05d762a2fc969818f1c24f7fe6006274ad10dcf3f0dc519cc68be2793",
+      "chain_ref": ""
+    },
+    {
+      "text": "Пофиксил баг с mempool",
+      "kind": "BUG_FIXED",
+      "priority": "IMPORTANT",
+      "tags": [
+        "mempool",
+        "chain"
+      ],
+      "session": "2026-10-12-session",
+      "ts": "2026-10-12T17:49:40Z",
+      "hash": "fca1e8bf918860e26f7428b4876f270d45103e7140f90b842cdde2bc8ac2e3a0",
+      "chain_ref": ""
+    },
+    {
+      "text": "Проверка патчера",
+      "kind": "MILESTONE",
+      "priority": "IMPORTANT",
+      "tags": [],
+      "session": "2026-10-12-session",
+      "ts": "2026-10-12T18:18:24Z",
+      "hash": "32a0dd2c6e617ae78833b957faacd0b9ad93b50ab107531251e87b18aee22dbc",
+      "chain_ref": ""
+    },
+    {
+      "text": "Тест после venv",
+      "kind": "MILESTONE",
+      "priority": "IMPORTANT",
+      "tags": [
+        "venv",
+        "test"
+      ],
+      "session": "2026-10-12-session",
+      "ts": "2026-10-12T18:31:20Z",
+      "hash": "b4dad915b6f571eccb06eb14ea9bb9abf27ad5e7b97856f755415dccdb8fdc2d",
+      "chain_ref": ""
+    },
+    {
+      "text": "???????? API ????? Invoke-RestMethod",
+      "kind": "MILESTONE",
+      "priority": "IMPORTANT",
+      "tags": [
+        "api",
+        "test"
+      ],
+      "session": "2026-10-12-session",
+      "ts": "2026-10-12T18:40:34Z",
+      "hash": "f5d886026799bd1ca970a0fbfa864383b1b37ca48e79af4e582f6ecb53e3b91f",
+      "chain_ref": ""
+    },
+    {
+      "text": "Сессия 2026-10-12. AI Memory полностью вшита: API (server.py, 8 эндпоинтов), CLI (aix ai remember|brief|stats|list), Web UI (вкладка 🧠 AI Memory), tests (11 passed). Патч-скрипт scripts/patch_ai_memory.py применён, .bak-копии созданы. Осталось: DAO в core/governance/dao.py (пустой файл). Следующий шаг — написать DAO с proposals/voting/quorum/execution на базе PoC.",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "ai-memory",
+        "dao",
+        "roadmap"
+      ],
+      "session": "2026-10-12-session",
+      "ts": "2026-10-12T18:40:57Z",
+      "hash": "89582f1b15714f111de557b3d86f5f5a88860f54a31f85fee824762cc92e481a",
+      "chain_ref": ""
+    },
+    {
+      "text": "Решения сессии: 1) AI Memory v1.1 - BRIEF_VERSION, JSON-режим, timeout=5s на git, атомарная запись с .bak. 2) Не использовать curl в PowerShell - только Invoke-RestMethod. 3) PowerShell 5.1 не читает UTF-8 без BOM - все .ps1 скрипты на ASCII. 4) FastAPI без --reload не подхватывает патчи - после каждого патча убивать процессы.",
+      "kind": "DECISION",
+      "priority": "CRITICAL",
+      "tags": [
+        "ai-memory",
+        "workflow",
+        "powershell"
+      ],
+      "session": "2026-10-12-session",
+      "ts": "2026-10-12T18:41:07Z",
+      "hash": "7d870ba5ed0bca2de2fd58c4747980e7c3ecf58f4785ffc28093b58c6d27895d",
+      "chain_ref": ""
+    },
+    {
+      "text": "AI_BRIEF.md v1.2: добавлена шапка-инструкция для AI-напарника. Теперь бриф начинается с 'Ты — AI-напарник AIX OS, не generic-ассистент'. В шапке: описание проекта, где мы сейчас (milestone + next step из памяти), правила работы (грабли), принятые решения из DECISION/IDEA памяти.",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "ai-memory",
+        "brief",
+        "v1.2"
+      ],
+      "session": "2026-10-12-session",
+      "ts": "2026-10-12T18:46:15Z",
+      "hash": "470e51c4c6039221c9b392c3ae2b7d713ff77d4f97eb4eb6307406e9c52c4270",
+      "chain_ref": ""
+    },
+    {
+      "text": "Сессия 2026-10-12 финал. AI Memory вшита во все интерфейсы: API (network/server.py, 8 эндпоинтов /ai/memory, /ai/remember), CLI (python cli/main.py ai remember|brief|stats|list), Web UI (вкладка 🧠 AI Memory), тесты (tests/test_ai_memory.py, 11 passed).",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "ai-memory",
+        "api",
+        "cli",
+        "web",
+        "done"
+      ],
+      "session": "2026-10-12-session",
+      "ts": "2026-10-12T18:48:19Z",
+      "hash": "6d745fbd26ce15ae2af241c17dd69bd69907ce7ced752b0d066f36fdf29716fa",
+      "chain_ref": ""
+    },
+    {
+      "text": "AI_BRIEF.md v1.2: добавлена шапка-инструкция для нового AI. Бриф теперь начинается с 'Ты AI-напарник AIX OS, не generic-ассистент'. В шапке: описание проекта, где мы сейчас (milestone+next step из памяти), правила (PowerShell, venv, FastAPI --reload), принятые решения.",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "ai-memory",
+        "brief",
+        "v1.2"
+      ],
+      "session": "2026-10-12-session",
+      "ts": "2026-10-12T18:48:20Z",
+      "hash": "1ee702e7fd6356e45bc03fd124eb8aef434f524b9c62ca23e91d333c44cca3b8",
+      "chain_ref": ""
+    },
+    {
+      "text": "run_all.ps1 и stop_all.ps1 переписаны на ASCII (PS 5.1 не читает UTF-8 без BOM) и вызывают .venv/Scripts/python.exe напрямую. Автогенерация AI_BRIEF.md добавлена в оба скрипта.",
+      "kind": "BUG_FIXED",
+      "priority": "IMPORTANT",
+      "tags": [
+        "powershell",
+        "venv",
+        "brief"
+      ],
+      "session": "2026-10-12-session",
+      "ts": "2026-10-12T18:48:21Z",
+      "hash": "85a3c3fdc4fef4534bbebdda694e8c4b169c22fa707bd7ffa02793a6f51adffa",
+      "chain_ref": ""
+    },
+    {
+      "text": "СЛЕДУЮЩИЙ ШАГ: написать core/governance/dao.py с нуля. DAO на базе Proof of Contribution: proposals (создать), voting (вес = репутация SBT), quorum (мин. кворум), execution (авто-выплата из PoC-пула). Файл сейчас пустой (0 байт).",
+      "kind": "DECISION",
+      "priority": "CRITICAL",
+      "tags": [
+        "dao",
+        "governance",
+        "next-step"
+      ],
+      "session": "2026-10-12-session",
+      "ts": "2026-10-12T18:48:21Z",
+      "hash": "7e87aefd70344d6f44e5b4659ca3d5aa4efca076df854096f00e9da52f2920bb",
+      "chain_ref": ""
+    },
+    {
+      "text": "Грабли проекта: 1) curl в PowerShell = Invoke-WebRequest (используй Invoke-RestMethod). 2) FastAPI без --reload не подхватывает патчи - убивать процессы. 3) python может указывать на uv-python вместо venv - всегда .venv/Scripts/python.exe явно. 4) Патчи больших файлов только скриптом. 5) Новый чат = AI_BRIEF.md в первом сообщении.",
+      "kind": "LEARNING",
+      "priority": "CRITICAL",
+      "tags": [
+        "workflow",
+        "powershell",
+        "venv"
+      ],
+      "session": "2026-10-12-session",
+      "ts": "2026-10-12T18:48:22Z",
+      "hash": "e15742e5875b8aa8344d96d5739a550c66cc08958acfbfdc61ca21c83de20e61",
+      "chain_ref": ""
+    },
+    {
+      "text": "Финальный шаг сессии: пересобрать AI_BRIEF.md и скинуть его в новый чат первым сообщением. Там он вспомнит всё.",
+      "kind": "IDEA",
+      "priority": "CRITICAL",
+      "tags": [
+        "brief",
+        "handoff"
+      ],
+      "session": "2026-10-12-session",
+      "ts": "2026-10-12T18:48:23Z",
+      "hash": "cec971dbb970dc6c6020fb43ce58815da78986ae46d219e0502d423f3e0d4fdd",
+      "chain_ref": ""
+    },
+    {
+      "text": "Сессия 2026-10-12. DAO (#13) создан с нуля: core/governance/dao.py. Lifecycle: create_proposal -> vote (weight=reputation SBT) -> tally (quorum 30%, pass >50%) -> execute (SPEND -> poc.pay). 11 тестов passed. Патч через scripts/patch_dao.py - интеграция в server.py (8 эндпоинтов /dao/*) и cli/main.py (8 команд aix dao ...).",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "dao",
+        "governance",
+        "done"
+      ],
+      "session": "2026-10-12-session",
+      "ts": "2026-10-12T19:30:43Z",
+      "hash": "03bc955519a73c0d7f2b698011e8ae082b21bc7150b62499ede6397a5db20a7c",
+      "chain_ref": ""
+    },
+    {
+      "text": "DAO константы: QUORUM_PERCENT=30, PASS_THRESHOLD=50, VOTING_PERIOD_BLOCKS=100, EXECUTION_DELAY_BLOCKS=20. Vote weight = sbt_manager.reputation(voter). Создатель proposal = держатель SBT. Execution = ручной вызов через aix dao execute (не авто, чтобы баг не слил пул).",
+      "kind": "DECISION",
+      "priority": "CRITICAL",
+      "tags": [
+        "dao",
+        "rules"
+      ],
+      "session": "2026-10-12-session",
+      "ts": "2026-10-12T19:30:54Z",
+      "hash": "7e64a1b203ebf30952ddfc3701ecf71a3b29a78b55aead324e718e2829a423bd",
+      "chain_ref": ""
+    },
+    {
+      "text": "СЛЕДУЮЩИЙ ШАГ: 1) DAO в state_sync.py (make_dao_event, import_proposal в apply_event) для синхронизации между нодами. 2) DAO в Web UI (вкладка на базе panel-ai). 3) Почистить DAO-патчи в server.py если что-то легло криво.",
+      "kind": "DECISION",
+      "priority": "IMPORTANT",
+      "tags": [
+        "dao",
+        "next-step"
+      ],
+      "session": "2026-10-12-session",
+      "ts": "2026-10-12T19:31:02Z",
+      "hash": "9f2cae1e5cff5312ab659db9e06f1b1debe515b2162c8158a52e756edb17fed9",
+      "chain_ref": ""
+    },
+    {
+      "text": "Сессия 2026-10-12/13. DAO синхронизирован между нодами. Патчи: state_sync.py (make_dao_event, import dao_proposals, case dao_proposal), server.py (проброс dao_manager в 4 вызова, фикс /dao/all count, dao в State-логе). Корневой баг сети: async background_sync вызывал синхронный requests.get, блокируя event loop -> /status отвечал 2-4s, Peer.ping timeout=2s -> пиры всегда is_alive=False -> pull не работал. Фикс: asyncio.to_thread(ping_all/get_chain), ping timeout 5s. Двусторонний синк A<->B подтверждён.",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-12T21:02:32Z",
+      "hash": "1f4a7a6793f056fdd9bd2a5a527728de88fc797afe1c0b7cf862547e74c4aef5",
+      "chain_ref": ""
+    },
+    {
+      "text": "Грабли: async background_sync в FastAPI нельзя вызывать requests.get напрямую - блокирует event loop, /status медленнее ping timeout, пиры помечаются мертвыми. Диагностика: Measure-Command /status vs Peer.ping timeout. Фикс: asyncio.to_thread().",
+      "kind": "LEARNING",
+      "priority": "CRITICAL",
+      "tags": [],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-12T21:02:42Z",
+      "hash": "5908b8f3ec64678436245873fec2b56e567c1820900a717abda3e83fe853709f",
+      "chain_ref": ""
+    },
+    {
+      "text": "Сессия 2026-10-13. Web UI: вкладка DAO добавлена (panel-dao после panel-ai). JS-функции refreshDao/daoCreate/daoVote/daoTally/daoExecute/daoCancel. Фиксы: (1) вставка tab шла внутрь AI Memory - сдвиг на len('</div>'); (2) panel-dao встала вне div.container (max-width:1200px) - перенесён закрывающий </div> после DAO, перед footer. Скрипты: scripts/patch_dao_web.py, scripts/fix_dao_container.py, шаблоны scripts/_dao_panel.html, scripts/_dao_js.txt.",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-12T21:22:09Z",
+      "hash": "df91a5265fbab13a86e99eccbeca630ae3ddf6465d1b8e15d496431305d87757",
+      "chain_ref": ""
+    },
+    {
+      "text": "Грабли Web UI: панели должны быть ВНУТРИ div.container (иначе теряется max-width:1200px). Вставка через src.find('</div>') возвращает позицию НАЧАЛА тега - нужно end += len('</div>'). Шаблоны больших HTML-блоков лучше держать отдельными файлами, а не heredoc в PowerShell.",
+      "kind": "LEARNING",
+      "priority": "IMPORTANT",
+      "tags": [],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-12T21:22:19Z",
+      "hash": "857dc7e55e4c7d97a28e68f726d3bce0d3e11cab5d1a8ee567916c2e534cdada",
+      "chain_ref": ""
+    },
+    {
+      "text": "Корень 2-секундных задержек во всех HTTP-запросах: Windows резолвит localhost в ::1 (IPv6), uvicorn слушает IPv4, клиент ждёт 2с таймаута и падает на IPv4. Фикс: везде использовать 127.0.0.1 (run_all.ps1 --url, data/peers_*.json, web/index.html NODE_URL). Диагностика: сравнить Measure-Command localhost:PORT vs 127.0.0.1:PORT. Симптом: ВСЕ эндпоинты ровно ~2s.",
+      "kind": "LEARNING",
+      "priority": "CRITICAL",
+      "tags": [],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-12T21:26:51Z",
+      "hash": "9b4cbeb73f9b6c7009343f3120f543bb80f0bd286a743479837452511d049b71",
+      "chain_ref": ""
+    },
+    {
+      "text": "Сессия 2026-10-13 завершена. Коммит 8018fbf. Закрыто: (1) DAO cross-node sync через state_sync + проброс dao_manager в server.py; (2) Web UI вкладка DAO; (3) корневой сетевой баг - async background_sync + sync requests.get = event loop starvation (asyncio.to_thread); (4) Windows IPv6 localhost -> 2-сек задержка всех запросов (везде 127.0.0.1, /status 2085ms->45ms). Тесты: 22 passed. DAO lifecycle полностью работает: create/vote/tally/execute/cancel, синк A<->B за <6 сек.",
+      "kind": "SESSION_END",
+      "priority": "IMPORTANT",
+      "tags": [],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-12T21:34:31Z",
+      "hash": "82d4d990f645d711d56542b8662a7bd37238fcb688357ffedac9e139cabc928b",
+      "chain_ref": ""
+    },
+    {
+      "text": "AIX Brain (#AI-2) запущен: слой ai/brain/ (client+tools+memory_bridge+agent), API /brain/ask+/brain/health, CLI aix brain health|ask|remember|chat. Ollama: llama3.2. Первый живой tool-calling: агент сам вызвал chain_status и ответил высотой цепочки. Тесты: 19 passed.",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "brain",
+        "ollama",
+        "tool-calling",
+        "done"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T08:37:09Z",
+      "hash": "92ccbcdbd16e34b3e5e54c9e6f07a9d16ed735b319a0ced801029f7c0c3f6033",
+      "chain_ref": ""
+    },
+    {
+      "text": "Brain Send (#AI-3) готов: preview_send (свободно) + safe_send (только CLI с signer). NullSigner по умолчанию — HTTP API не может отправлять. CLISigner: preview -> y/N -> sign -> POST /send. Приватный ключ в LLM не попадает. 33 теста passed. Первая реальная отправка через CLI: alice -> bob 1 AIX, tx разослан. Промпт усилен таблицей намерений + few-shot.",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "brain",
+        "send",
+        "safety",
+        "signer",
+        "done"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T09:19:14Z",
+      "hash": "f674661c37c0fdb93198effa3dd3cb876b693aedada3fbc4fce8e0bc802dc229",
+      "chain_ref": ""
+    },
+    {
+      "text": "Brain Send (#AI-3) РАБОТАЕТ END-TO-END. CLI: brain chat --wallet alice -> 'отправь 1 AIX bob' -> qwen2.5:7b сама вызвала safe_send -> preview -> y/N -> tx ушла (TX: dec9b1b3...). HTTP: NullSigner честно блокирует отправку, модель это понимает и объясняет. llama3.2 (2B) не тянет русский tool-calling, дефолт сменён на qwen2.5:7b (7B). Timeout 300s, потому что 7B первый прогрев + думает. 33 теста passed.",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "brain",
+        "send",
+        "qwen",
+        "safety",
+        "end-to-end"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T10:02:21Z",
+      "hash": "df37c49351581ccff84b4f8b91686c87bdfa89dc040909a91c3132c3bbb6b7a3",
+      "chain_ref": ""
+    },
+    {
+      "text": "Brain Web UI (#AI-4) работает end-to-end. Вкладка 🧠 Brain в Web Wallet: health-панель, 5 быстрых вопросов, чат-интерфейс, явное предупреждение про read-only. Первый живой ответ в браузере: qwen2.5:3b сама вызвала chain_status и ответила 'высота цепочки 17 блоков'. Read-only через NullSigner: HTTP API физически не может отправить tx. Дефолтная модель переведена на qwen2.5:3b (влезает в 6.9 GB RAM, умнее llama3.2). web/index.html пересобран вручную после багов авто-патча: дубли панелей, кнопка Brain внутри panel-send, panel-brain вне div.container. Решение: большие HTML-структуры пересобирать целиком, не патчить.",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "brain",
+        "web",
+        "milestone",
+        "qwen",
+        "read-only"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T10:36:28Z",
+      "hash": "a7049b10fc7dab6d7a4294733798c8123fd12291ed17ad95a14001ba886f9c35",
+      "chain_ref": ""
+    },
+    {
+      "text": "Сессия 2026-10-13 (вечер): Brain Web UI работает end-to-end. Первый живой ответ в браузере: qwen2.5:3b сама вызвала chain_status -> 'высота цепочки 17 блоков'. Read-only через NullSigner. Дефолт модели: qwen2.5:3b (RAM 6.9 GB). Созданы: web/landing/index.html (лендинг v2 с живой статистикой и анимированным демо Brain), README.md EN, docs/HABR_ARTICLE.md, docs/DEMO_RECORDING.md, обновлён CONTEXT.md. Правило: большие HTML-структуры только полной заменой файла, авто-патч ломается. Env-переменная AIX_BRAIN_MODEL перебивает дефолт config.py - при расхождении health проверять Remove-Item Env:AIX_BRAIN_MODEL.",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "brain",
+        "web",
+        "landing",
+        "docs",
+        "milestone"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T11:03:04Z",
+      "hash": "c65ea96fbef1e48e82f688947c375294006bcf5fa2ebb82e84fd0d68ecca24f7",
+      "chain_ref": ""
+    },
+    {
+      "text": "Brain расширен до 14 tools (было 8): добавлены read-only gift_info, gift_list, timelock_info, timelock_list, swap_pools, swap_quote. Brain теперь умеет смотреть подарки, капсулы, котировки AMM и пулы. Write-операции (создание gift/timelock, swap_execute) отложены до батча 8 — требуют расширения CLISigner под generic-подтверждения.",
+      "kind": "MILESTONE",
+      "priority": "IMPORTANT",
+      "tags": [
+        "brain",
+        "tools",
+        "swap",
+        "gift",
+        "timelock"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T11:08:38Z",
+      "hash": "e6043d82adacb36d003763faeccc0fbac710e7c9e16c668c76e6dfb96ef2d066",
+      "chain_ref": ""
+    },
+    {
+      "text": "Brain расширен до 16 tools (было 8): добавлены gift_info, gift_list, timelock_info, timelock_list, swap_pools, swap_quote (все read-only). Brain теперь смотрит подарки, капсулы, котировки AMM и пулы. Write-операции (gift_create, timelock_create) идут в батче 8 с расширением CLISigner.confirm_action() — универсальное подтверждение y/N для любых действий, не только safe_send. Приватный ключ для gift/timelock НЕ читается вообще — сервер сам делает эскроу, подписи нет.",
+      "kind": "MILESTONE",
+      "priority": "IMPORTANT",
+      "tags": [
+        "brain",
+        "tools",
+        "swap",
+        "gift",
+        "timelock"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T11:10:08Z",
+      "hash": "b85998c28864399a44176eaaf0fbb008e4eafdd400a94434bf162ed54decf802",
+      "chain_ref": ""
+    },
+    {
+      "text": "Brain #AI-5 закрыт: LLM умеет gift_create и timelock_create через CLI. CLISigner.confirm_action(preview, action_type) — универсальное y/N для действий без подписи. Для gift/timelock приватный ключ НЕ читается вообще (сервер сам делает эскроу). Sender всегда из --wallet, LLM не может подставить чужой. HTTP API по-прежнему блокирован через NullSigner. Тестов: 71 passed. Brain: 16 tools (8 read + 2 send + 2 gift + 2 timelock + 2 swap).",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "brain",
+        "gift",
+        "timelock",
+        "signer",
+        "done"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T11:18:08Z",
+      "hash": "9f088b1762cc2693ed6a00f1bea9019cf68ac067de2bfaf8762e0728fb9a90da",
+      "chain_ref": ""
+    },
+    {
+      "text": "Brain #AI-7 ЗАКРЫТ ПОЛНОСТЬЮ. Живой end-to-end тест: @dave зарегистрирован с первого раза через brain chat, аватар 🚀 подхватился, preview показал корректно. Отправка 1 AIX bob от dave честно отклонена 'баланс 0.0 AIX'. Высота 17. exit работает. 77 тестов passed. Прогон показал: 3B-модель стабильно вызывает tool после усиления промпта (правила для LLM помечены как '# ПРАВИЛА ДЛЯ ТЕБЯ — не произноси их вслух'). Найденный баг: пользователь пишет '> команда' по привычке REPL, из-за чего exit не срабатывал — фикс scripts/patch_brain_chat2.py срезает ведущие '>' и '>>'. Brain готов к показу миру: 19 tools, 100% покрытие CLI, безопасность через NullSigner/CLISigner, точные ошибки от сервера, стабильный чат.",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "brain",
+        "done",
+        "ready",
+        "milestone"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T12:30:12Z",
+      "hash": "1ac2e553226da59d9a6d9eb9fd9ce6c39a4f542086449c4179ec7401530a5933",
+      "chain_ref": ""
+    },
+    {
+      "text": "Решение по демо-материалам: GIF-скринкаст терминала отклонён. Для выхода в массы нужен мощный вирусный рекламный ролик (30-60 сек), а не запись экрана. GIF-инструкция docs/DEMO_RECORDING.md устарела как основной артефакт. Новые варианты: (1) manim-скрипт на Python для motion graphics с рендером локально; (2) сценарий + промпты для видео-ИИ (Sora/Runway/Kling/Шедеврум) с последующей склейкой в CapCut; (3) гибрид — manim для графики + ИИ для атмосферных кадров. В ролике должны быть: космос, планета, логотип AIX ⚡ OS, живой диалог с Brain, монеты, финальный слоган «Империя начинается с тебя», URL/QR.",
+      "kind": "DECISION",
+      "priority": "CRITICAL",
+      "tags": [
+        "video",
+        "promo",
+        "marketing",
+        "brain",
+        "decision"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T12:36:01Z",
+      "hash": "4b0219488d5e1c3a8264cdc1e66581b9df5049e607c446857efb6101442d6178",
+      "chain_ref": ""
+    },
+    {
+      "text": "Промо-материалы созданы как СКРИПТЫ, а не ручная запись. scripts/make_promo.py — 30-секундный ролик 1280x720@30fps полностью на Pillow + imageio (ffmpeg через pip, без системной установки). 7 сцен: космос → планета → слоган → терминал с диалогом Brain → монеты → логотип + 12 протоколов → финал. Рендер 2-4 мин на CPU. Выход: docs/promo.mp4 + poster.png. Иконки: web/landing/favicon.svg (SVG для браузера) + scripts/make_icons.py генерит PNG (192/512/apple-touch) и favicon.ico через Pillow. scripts/patch_web_icons.py вставляет <link rel=icon> + manifest в оба index.html. Анимация независима от CLI, повторяема одной командой. GIF-скринкаст полностью отклонён как формат для публичного промо.",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "promo",
+        "video",
+        "icons",
+        "marketing",
+        "scripts"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T12:50:59Z",
+      "hash": "41f8614f8f4ec54e118a4306bc13f63b0e3a4dca95fb89dcdbeac74232d0b5a6",
+      "chain_ref": ""
+    },
+    {
+      "text": "Фиксы лендинга и Web Wallet: (1) ссылки GitHub теперь на https://github.com/aix-os (было заглушечное https://github.com/); (2) создан web/landing/roadmap.html — страница с 7 стадиями проекта (Ядро, 12 протоколов, AI Brain, Выход в мир, Мобильное, Голос, Приватность+mesh); ссылка добавлена в NAV лендинга; (3) favicon: убран кривой data-URI 'data:image/svg+xml,<svg...>' который браузеры не отображали; заменён на нормальные <link rel='icon' href='favicon.svg'> + favicon.ico + apple-touch-icon + manifest в обоих index.html; (4) Whitepaper ссылки теперь на GitHub blob (там .md рендерится), а не на локальный docs/WHITEPAPER.md (который браузер показывал как сырой текст); (5) логотип в шапке лендинга стал ссылкой на index.html. Для отображения иконки в Web Wallet нужен rel='icon' с абсолютным путём '/landing/favicon.svg'. После правок нужен Ctrl+F5 или приватное окно (браузеры кэшируют favicon агрессивно).",
+      "kind": "BUG_FIXED",
+      "priority": "IMPORTANT",
+      "tags": [
+        "web",
+        "favicon",
+        "github",
+        "roadmap",
+        "brain"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T13:11:41Z",
+      "hash": "d0b8a5180b7d180da48f8f80f160fab62d01db710b96ada11bdb99b00a719c16",
+      "chain_ref": ""
+    },
+    {
+      "text": "СЕССИЯ 2026-10-13 ЗАКРЫТА. Полный стек готов: ядро (PoW+ECDSA+Base58), 12 протоколов, AIX Brain (19 tools, 3B-модель), Web UI с вкладкой Brain, лендинг v2 с живой статистикой, roadmap.html, README EN, Habr-статья, demo guide, иконки (favicon.svg+ico+PNG+manifest), промо-рендерер (scripts/make_promo.py). Тесты 77 passed. Ссылки GitHub переведены на github.com/aix-os. Все страницы показывают иконку AIX в адресной строке. Готовы к публикации. Дальше: git push origin main → Habr sandbox → VK/Telegram с промо-роликом → ждать первых issue/звёзд.",
+      "kind": "SESSION_END",
+      "priority": "CRITICAL",
+      "tags": [
+        "session-end",
+        "world",
+        "release",
+        "milestone"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T13:12:39Z",
+      "hash": "0667336928d0bbb2ee956991c6a676d94116a5dedad1b980141aed9693bde565",
+      "chain_ref": ""
+    },
+    {
+      "text": "СЕССИЯ 2026-10-13 ЗАКРЫТА. Проект ОПУБЛИКОВАН на GitHub: https://github.com/aix-os/aix-os. Коммит 19e1f48, 45 файлов, 6556 insertions. Что вошло: ai/brain/* (config, client, tools, memory_bridge, signer, agent), web/landing/* (index, roadmap, favicon.svg/ico, icon-192/512, apple-touch, site.webmanifest), docs/* (HABR_ARTICLE, POST_VK_TELEGRAM, POST_HN_REDDIT, RELEASE, DEMO_RECORDING, promo.mp4, promo_poster.png), scripts/* (patch_brain*×6, patch_web_icons, patch_github_url, make_icons, make_promo, install_promo.ps1, debug_brain_tools), tests (test_brain, test_brain_signer, test_brain_tools_write), CONTEXT_UPDATE.md. .gitignore обновлён: добавлены исключения !web/landing/*.svg/*.png/*.ico для иконок. Проверки безопасности пройдены: git log по wallet/chain пусто, git ls-files не содержит реальных кошельков и chain_*.json. GitHub-организация: aix-os (логин личный: kikini-bot). Порядок публикации: git push ✅ СДЕЛАНО -> далее Habr sandbox (день 1) -> VK/Telegram (день 3-4) -> Reddit LocalLLaMA (день 7) -> HN Show HN (день 10) -> r/cryptocurrency (день 14).",
+      "kind": "SESSION_END",
+      "priority": "CRITICAL",
+      "tags": [
+        "release",
+        "published",
+        "github",
+        "done",
+        "milestone"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T13:42:46Z",
+      "hash": "e0d628357f436f4b73215e8a6494dbf930e90feac93f780c3d1cd90652c36cf6",
+      "chain_ref": ""
+    },
+    {
+      "text": "Flutter-кошелёк: криптография сходится с Python. Файл mobile/flutter_app/lib/crypto/aix_crypto.dart реализует SHA256, RIPEMD160, hash160, Base58Check, ECDSA secp256k1 (compressed pubkey, DER-подпись). Тест: приватный ключ 0x...0001 в Dart даёт адрес AIXTLeUZDGLWnyiJVFcp3m3M1782uBsGWa8uf — идентично Python. 7/7 тестов passed. Стек Dart: pointycastle 4.0.0, crypto 3.0.7, base58check 2.0.0. Важная грабля: в pointycastle 4.0 ECPoint стал nullable — нужно q!.getEncoded(true). Следующий шаг: WalletService с flutter_secure_storage для хранения ключа на устройстве, экран создания кошелька.",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "flutter",
+        "crypto",
+        "wallet",
+        "milestone"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T15:57:27Z",
+      "hash": "ff5b4b19ace46567d5d85aa430f14e81396f81140340c3ec305e0fad949279e2",
+      "chain_ref": ""
+    },
+    {
+      "text": "Flutter-кошелёк: полная криптосходимость с Python. Перешли crypto/keys.py на SHA256 + DER (sigencode_der/sigdecode_der) — раньше был дефолтный SHA1 + raw подпись, не совпадало с Dart. Скрипт check_dart_signature.py подтвердил: подпись, сгенерированная в Dart (FortunaRandom + ParametersWithRandom), принимается Python-нодой — is_valid()=True, VALID. Теперь кошелёк на устройстве может подписывать транзакции, а приватный ключ никогда не покидает телефон. Тесты: test/crypto_test.dart (7/7), test/tx_signer_test.dart (4/4), test/wallet_service_test.dart (5/5), test/e2e_sign_test.dart (1/1), check_dart_signature.py (VALID). Цепочка сброшена в чистый genesis, ноды перезапущены. Стек Dart: pointycastle 4.0.0 (ECPoint nullable, ECDSASigner(digest, mac), random через ParametersWithRandom), crypto 3.0.7, base58check 2.0.0, flutter_secure_storage 9.2.4.",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "flutter",
+        "crypto",
+        "e2e",
+        "done",
+        "milestone"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T16:42:05Z",
+      "hash": "af63173fb64194b47034aee909fc3e07539c3feee6c67819e619ab3dcc8f2736",
+      "chain_ref": ""
+    },
+    {
+      "text": "ВАЖНО: целевая цена AIX = 100 долларов США. Все внутренние курсы в AMM-пулах считаются от этого: 1 AIX = \\, 1 USDT = \\, 1 BTC = \\ и т.д. В пул кладём фиксированное количество AIX (1000 AIX = \\) и эквивалент \\ второго токена. Это ключевое экономическое решение проекта — AIX позиционируется как дорогая монета, не мем-коин. При любых будущих пулах, swap-курсах, листингах, расчётах reward — отталкиваться от этой цены. Не менять без явного решения основателя.",
+      "kind": "DECISION",
+      "priority": "CRITICAL",
+      "tags": [
+        "price",
+        "aix",
+        "economy",
+        "swap",
+        "core"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T17:35:39Z",
+      "hash": "f861e390ddb2aab14e8af8727697887f55ff0e8c7dab12b15c4148ab4a273ea0",
+      "chain_ref": ""
+    },
+    {
+      "text": "Созданы системные кошельки: founder=AIXTDAxX7jcySbFX61wTyhxtg8asGnnzcbmGr, treasury=AIXTNgGdhLXuBKFVXCHXE1eo5JYJ98wgkdABh. Revenue share: 0.1% с swap-комиссии идёт founder, 0.2% — LP-держателям. Fee за send 0.1% идёт майнеру блока. Treasury управляется через DAO (кворум 30%, порог 50%, макс выплата 10%). Целевая цена AIX = \\. Планируется намайнить 1 000 000 AIX на founder.",
+      "kind": "DECISION",
+      "priority": "CRITICAL",
+      "tags": [
+        "economy",
+        "founder",
+        "treasury"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T18:19:34Z",
+      "hash": "0cf520c745e0b45d1d0b86a9f90f66233d59ec3933a92ac32cbe51ab821e8ff7",
+      "chain_ref": ""
+    },
+    {
+      "text": "ЖЁСТКОЕ ПРАВИЛО: выдавать ТОЛЬКО целые файлы с указанием полного пути. НИКОГДА не давать 'найди блок и вставь' / 'замени строку' / 'быстрый фикс' — это засоряет чат, половина команд теряется, напарник раздражён. Если нужно изменить файл — давать его целиком. Если файл больше 500 строк — предупредить и дать целиком следующим сообщением.",
+      "kind": "LEARNING",
+      "priority": "CRITICAL",
+      "tags": [
+        "workflow",
+        "rule",
+        "files"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T19:19:26Z",
+      "hash": "7b65f17ca8496b0136b170c2d0d80e419344ba93a5aeb35ade2b97dbebfdc17f",
+      "chain_ref": ""
+    },
+    {
+      "text": "Сессия 2026-10-13 (вечер): мобильный кошелёк Flutter ЗАРАБОТАЛ. Что готово: (1) экран создания/импорта кошелька с PIN, приватный ключ в flutter_secure_storage; (2) главный экран с hero-карточкой и 10 протоколами в виде компактных плиток (переделан дизайн по просьбе напарника — было крупные квадраты); (3) МАЙНИНГ одной кнопкой — большая кнопка, копит AIX в реальном времени; (4) История — рабочий список с правильным форматом сумм; (5) Медали SBT — 3 таба (Мои/Каталог/Топ); (6) PoC — фонд, вклады по статусам; (7) Контакты — регистрация и lookup по телефону; (8) Swap, Отправка, Приём, Настройки. КРИТИЧНЫЕ ФИКСЫ: SATOSHI=10^18 (не 10^8!), было расхождение из-за которого история показывала +500000000000 AIX вместо +50. Ошибка locale — фикс через initializeDateFormatting('ru_RU', null) в main.dart, без пакета flutter_localizations (он ломал сборку). PATH в VS Code слетает при старте терминала — постоянный фикс: закрыть VS Code и открыть заново после правок реестра; временно: \\C:\\Users\\КОЛЮНЯ\\Desktop\\AIX-OS\\.venv/Scripts;C:\\Program Files\\PowerShell\\7;c:\\Users\\КОЛЮНЯ\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand;c:\\Users\\КОЛЮНЯ\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli;C:\\Users\\КОЛЮНЯ\\.codegpt\\bin;C:\\flutter\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\КОЛЮНЯ\\AppData\\Local\\Programs\\Ollama;C:\\Users\\КОЛЮНЯ\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;c:\\Users\\КОЛЮНЯ\\.vscode\\extensions\\vscjava.vscode-java-debug-0.59.0\\bundled\\scripts\\noConfigScripts;c:\\Users\\КОЛЮНЯ\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts = [Environment]::GetEnvironmentVariable('Path','Machine') + ';' + [Environment]::GetEnvironmentVariable('Path','User'). Что дальше: DAO + Подарки + TimeLock (батч 2), Наследство + Faucet + Brain (батч 3), мультичейн M1+M2 BTC/ETH/TON (батч 4). Заглушки-PlaceholderScreen для всех неготовых экранов уже стоят, всё жмётся.",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "flutter",
+        "mobile",
+        "wallet",
+        "mining",
+        "fix",
+        "satoshi",
+        "path"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T20:14:01Z",
+      "hash": "7ff3abf8a5fa7ba91e4abc530630c1f9fb9202b99828aa7df01744b9bd623f6f",
+      "chain_ref": ""
+    },
+    {
+      "text": "Сессия 2026-10-13 (глубокая ночь): ЭКОНОМИКА ФИНАЛИЗИРОВАНА. (1) MAX_SUPPLY изменён с 21 000 000 на 21 000 000 000. Цена AIX = \\.10 (было \\). Капитализация при старте \\.1B, потолок \\ при \\/AIX. Обоснование: 21M давал потолок \\.1B — как средний крепыш, не как ОС для 8 млрд людей. (2) INITIAL_DIFFICULTY переменная (не DIFFICULTY!), есть автоподстройка каждые 10 блоков. Для быстрого майнинга ставили INITIAL=1, MIN=1, MAX=1. После майнинга вернули INITIAL=5, MIN=1, MAX=10. Скрипт scripts/patch_config.py с флагами --supply/--initial-difficulty/--min-difficulty/--max-difficulty. (3) Намайнено по 1 000 000 AIX на founder, koxa, скоро ещё на другие. (4) КРИТИЧНО: только ОДИН майнер одновременно. Два параллельных майнера дают 500 Internal Server Error, потому что бьются за один блок. Убивать лишние: Get-Process -Id <PID> | Stop-Process -Force. (5) Майнер scripts/mine_founder.py --wallet <имя> майнит на любой кошелёк, --target задаёт цель. (6) SATOSHI=10^18 (не 10^8!) — исправлен в мобильном history_screen.dart и node_client.dart (sendAix умножал на 10^8 вместо 10^18). (7) PATH в VS Code слетает при старте терминала. Временный фикс: \\C:\\Users\\КОЛЮНЯ\\Desktop\\AIX-OS\\.venv/Scripts;C:\\Program Files\\PowerShell\\7;c:\\Users\\КОЛЮНЯ\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand;c:\\Users\\КОЛЮНЯ\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli;C:\\Users\\КОЛЮНЯ\\.codegpt\\bin;C:\\flutter\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\КОЛЮНЯ\\AppData\\Local\\Programs\\Ollama;C:\\Users\\КОЛЮНЯ\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;c:\\Users\\КОЛЮНЯ\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts;c:\\Users\\КОЛЮНЯ\\.vscode\\extensions\\vscjava.vscode-java-debug-0.59.0\\bundled\\scripts\\noConfigScripts = [Environment]::GetEnvironmentVariable('Path','Machine') + ';' + [Environment]::GetEnvironmentVariable('Path','User'). Постоянный: закрыть VS Code и открыть заново. (8) Локализация ru: initializeDateFormatting('ru_RU', null) в main.dart без пакета flutter_localizations (он ломал сборку).",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "economy",
+        "supply",
+        "difficulty",
+        "mining",
+        "flutter",
+        "satoshi",
+        "path"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T20:35:23Z",
+      "hash": "6b31cf20d42a7b84400ac2e48db13aa530564fe09707fa176e9e3091056de46e",
+      "chain_ref": ""
+    },
+    {
+      "text": "Сессия 2026-10-13 завершена. Обновлён .gitignore — защита всех приватных данных: data/wallets/, data/chain_*.json, data/*.json (все ноды), *.wallet.json, *.seed, seed.txt, mnemonic.txt, data_backup_*, *.bak* (все номера), *.log, AI_BRIEF.md/json, CONTEXT_UPDATE.md, .venv/, .env, mobile/flutter_app/e2e_out/, mobile/flutter_app/build/, Flutter-generated. Исключения для иконок: web/landing/*, docs/promo.mp4, mobile/flutter_app/assets/*. Все сессионные артефакты не попадут в публичный репозиторий. Кошельки founder/koxa/alice/bob/carol/dave/miner/treasury, chain_A.json/chain_B.json, swap_*.json, ai_memory.json — НЕ публикуются никогда. Проверено через git ls-files, git log --all --full-history.",
+      "kind": "DECISION",
+      "priority": "CRITICAL",
+      "tags": [
+        "gitignore",
+        "security",
+        "wallets",
+        "privacy"
+      ],
+      "session": "2026-10-13-session",
+      "ts": "2026-10-13T20:40:41Z",
+      "hash": "ece01f2c01c4224c4fcc0383c4465e286c13a8bc9ea72093329ac1ce03a27d56",
+      "chain_ref": ""
+    },
+    {
+      "text": "Полный план интеграции AIX с миром (зафиксирован основателем). ТРИ ПУТИ: (1) Custom Network — добавить сеть AIX OS в MetaMask/Trust Wallet через RPC, видеть настоящий AIX в популярных кошельках. (2) Wrapped AIX — токен wAIX на BSC/Ethereum (BEP-20/ERC-20), торгуется на PancakeSwap/Uniswap за USDT. (3) Платёжный шлюз Pay with AIX + регистрация в Chainlist — реальное применение монеты для оплаты товаров/услуг, плюс добавление сети в 1 клик через публичный реестр. ЭТАПЫ: A (Custom Network, 1 час, СЕЙЧАС), B (Chainlist, 1 нед), C (публикация кошелька — APK+EXE+GitHub Releases, 2 нед), D (Pay with AIX + Telegram-бот, 3 нед), E (блокчейн-эксплорер, 2 нед), F (Wrapped AIX мост на BSC, 4-6 нед), G (листинги CoinGecko/CMC/CEX/BingX/Bitget/MEXC, 1-2 мес), H (мосты на ETH/TON/SOL через LayerZero/Wormhole, 6+ мес), I (Google Play/App Store/Microsoft Store, 6+ мес). ДО ПОЛНОГО ВЫХОДА В МИР — 6-9 месяцев. Приоритет: сначала A (Custom Network), потом продолжить батчи кошелька (2-4), потом C (публикация). Мосты на другие сети — не раньше чем через 2-3 месяца когда есть 1000+ пользователей.",
+      "kind": "DECISION",
+      "priority": "CRITICAL",
+      "tags": [
+        "integration",
+        "metamask",
+        "trust",
+        "bsc",
+        "bridge",
+        "chainlist",
+        "payments",
+        "roadmap"
+      ],
+      "session": "2026-10-14-session",
+      "ts": "2026-10-13T21:03:15Z",
+      "hash": "c58d31110e63401884b3c78ed51b5e6f7e1b0866dbf8ad24f2a1d80a72fc0c63",
+      "chain_ref": ""
+    },
+    {
+      "text": "БАНК ИДЕЙ (сессия размышлений 2026-10-14). 20 концепций для будущих этапов, отсортированы по приоритету основателя. ТОП-3 к реализации: (1) Отмена транзакции — 5-минутное окно между подписью и добавлением в блок, отдельный pending-пул, спасение от опечаток. Уникально для индустрии. (2) Brain-обмен голосом —'Brain, обменяй 1000 AIX когда будет выгодно \\.15', мозг сам ждёт и исполняет. (3) Репутация как залог — если SBT > 100, не нужен USDT-залог для крупной сделки, доверие вместо залога. Уникально — нигде нет. ГРУППА КОШЕЛЁК ДЛЯ ЖИЗНИ: умный обмен по условию (лимитный ордер), социальный кошелёк семьи (мультиподпись 2 из 3), автопилот (копилка 10%, коммуналка, DCA), отмена транзакции, копилка с целями (iPhone за 50000 AIX), NFC-платежи. ГРУППА УМНЫЙ ОБМЕН: DCA-стратегия автоматическая, P2P-свопы с друзьями без AMM по договорному курсу, эскроу для крупных сделок с SBT-арбитром, Vaults (стейкинг AIX под 5-15% через P2P-займы), опционы на AIX, репутация как залог. ГРУППА BRAIN: голосовой обмен, anti-scam защита (предупреждение если адрес новый или репутация 0), социальное восстановление через 3 друзей (Shamir Secret Sharing, 12 слов). ПРОЕКТНЫЕ: стрики и ежедневные награды, достижения-NFT, квесты, публичный профиль с балансом (опционально), общие кошельки для команды/семьи. Каждая идея реализуема в текущем стеке (Flutter + FastAPI + ECDSA). Не реализовывать все сразу — только по одной за батч, после завершения основных экранов.",
+      "kind": "IDEA",
+      "priority": "CRITICAL",
+      "tags": [
+        "wallet",
+        "ideas",
+        "features",
+        "roadmap",
+        "unique"
+      ],
+      "session": "2026-10-14-session",
+      "ts": "2026-10-13T21:06:24Z",
+      "hash": "db754515f4d13554c6a03a060facc7d9983d11d598128e1ce94eceed6dbb449e",
+      "chain_ref": ""
+    },
+    {
+      "text": "БАНК ИДЕЙ (расширен, 2026-10-14). Структура: ГРУППА A «как у всех» (гигиенические, обязательные) + ГРУППА B «ноу-хау» (уникальные). ГРУППА A (добавить): 1) несколько аккаунтов в одном приложении, 2) watch-only адреса, 3) поиск/фильтры в истории, 4) экспорт истории CSV, 5) push-уведомления, 6) биометрия, 7) автоблокировка, 8) защита от скриншотов, 9) проверка адреса перед отправкой, 10) ценовые уведомления, 11) DApp-браузер, 12) тёмная/светлая тема, 13) мультиязычность, 14) seed-фраза (12 слов), 15) папки/категории транзакций, 16) стейкинг с периодами, 17) governance UI, 18) NFT-галерея. ГРУППА B ТОП-УРОВЕНЬ (уникально в мире): B1 отмена транзакции 5-минутным окном, B2 репутация как залог (SBT>100 = не нужен USDT-залог), B3 Brain-обмен по условию, B4 условные платежи, B5 Social Recovery 2 из 3 через друзей, B6 AI-anti-scam проверка получателя, B7 Family Wallet 2 из 3, B8 соцсеть внутри кошелька (профиль/подписки/лайки). ГРУППА B ВТОРОЙ УРОВЕНЬ (редко): B9 P2P-свопы с друзьями без AMM, B10 Smart DCA с AI-коррекцией, B11 публичный профиль с балансом, B12 достижения-NFT, B13 квесты от проекта, B14 реферальная программа 5% навсегда. ГРУППА B ТРЕТИЙ УРОВЕНЬ (экзотика): B15 NFC-платежи, B16 voice-first UI, B17 AI-советник бюджета, B18 инвестиционный портфель с AI-рекомендациями, B19 автобалансировка портфеля, B20 Smart-Save округление, B21 Buy-the-Dip автоматически, B22 капсулы времени как NFT, B23 кешбэк в AIX от партнёров-магазинов, B24 родительский контроль для детей, B25 таймер-лимит трат. СТРАТЕГИЯ: Волна 1 (до запуска) = гигиена A1-A15 + B1+B5+B6. Волна 2 (1-2 мес с пользователями) = B2+B3+B4+B8+B13+B14. Волна 3 (3-6 мес) = B10+B15+B17-B21+B23+B25. Принцип: сначала догнать всех по базе, потом обогнать по ноу-хау. Не реализовывать всё сразу — только по одному батчу за раз, после завершения основных экранов (DAO, Подарки, TimeLock, Наследство, Faucet UI, Brain).",
+      "kind": "IDEA",
+      "priority": "CRITICAL",
+      "tags": [
+        "wallet",
+        "ideas",
+        "features",
+        "unique",
+        "roadmap",
+        "strategy"
+      ],
+      "session": "2026-10-14-session",
+      "ts": "2026-10-13T21:09:53Z",
+      "hash": "a52a5dd426759c8351f71dcf592f48a755a27f505d57f891bd7b32c70a1d47bf",
+      "chain_ref": ""
+    },
+    {
+      "text": "Сессия 2026-10-14 (размышления + планирование) завершена. Записаны в память: план интеграции AIX с миром (9 этапов A-I, до полного выхода 6-9 месяцев), банк 25 идей кошелька (группа A 'как у всех' + группа B 'ноу-хау' в 3 уровня, стратегия 3 волн). ТОП-3 ноу-хау: B1 отмена транзакции, B3 Brain-обмен голосом, B5 Social Recovery через друзей. Экономика финализирована: 21 млрд supply, \\.10/AIX. Mobile кошелёк работает. На завтра: (1) проверить майнинг koxa, (2) вернуть сложность на 5 (patch_config.py --initial-difficulty 5 --max-difficulty 10), (3) Батч 2 DAO+Подарки+TimeLock, (4) Custom Network 1 час. Девиз: сначала догнать всех по базе, потом обогнать по ноу-хау.",
+      "kind": "SESSION_END",
+      "priority": "CRITICAL",
+      "tags": [
+        "session-end",
+        "planning",
+        "ideas",
+        "roadmap"
+      ],
+      "session": "2026-10-14-session",
+      "ts": "2026-10-13T21:11:17Z",
+      "hash": "6c60dc1df7c193c0c3701b82a805167519fc6be329b9faf4277c311372e63e5c",
+      "chain_ref": ""
+    },
+    {
+      "text": "ДОПОЛНЕНИЕ к банку идей (2026-10-14): (1) Мульти-аккаунт в одном кошельке — несколько AIX-адресов внутри одного приложения, быстрое переключение между ними (как в MetaMask), список аккаунтов в боковом меню, у каждого свой баланс/история/AIX-ID, ключи всех аккаунтов в flutter_secure_storage под одним PIN. UX: заголовок главного экрана — выпадающий список аккаунтов, тап → переключение без пароля (пароль только на создание/экспорт). (2) Майнинг с телефона — прямо из мобильного приложения, кнопка 'Начать майнинг' на главной, экран mining_screen.dart уже частично готов (кнопка старт/стоп, статистика сессии, счётчик блоков), нужно: оставить телефон подключённым к домашней ноде через туннель (CloudFlare/ngrok), либо встроить лёгкий майнер прямо в приложение (более сложно, отложить на Волну 3). СЕЙЧАС: майнинг с телефона работает ЧЕРЕЗ УДАЛЁННЫЙ ДОСТУП К НОДЕ — телефон шлёт POST /mine на домашнюю ноду через публичный URL. Приоритет: Волна 1 (до публикации), вместе с базовой гигиеной. Обе фичи добавляют 'премиальности' — как у всех + приятно.",
+      "kind": "IDEA",
+      "priority": "IMPORTANT",
+      "tags": [
+        "wallet",
+        "multi-account",
+        "mining",
+        "mobile",
+        "features"
+      ],
+      "session": "2026-10-14-session",
+      "ts": "2026-10-13T21:22:30Z",
+      "hash": "41cdf24c269a1dae8f28c0487ca8c4b83bafd693c5fabec84f5be0ff5adcfe28",
+      "chain_ref": ""
+    },
+    {
+      "text": "ПРАВИЛО ЗАПУСКА FLUTTER-приложения: приложение НЕ запущено постоянно. Когда нужно работать с мобильным кошельком — открыть VS Code, убедиться что мы в папке mobile/flutter_app, проверить PATH (может слететь), потом выполнить: cd C:\\Users\\КОЛЮНЯ\\Desktop\\AIX-OS\\mobile\\flutter_app ; flutter run -d windows. Первый запуск 30-60 сек (сборка .exe), дальше горячий перезапуск через R (большая) в окне flutter run. Выход — q + Enter. Никогда не предполагать что приложение уже запущено — всегда спрашивать или проверять.",
+      "kind": "LEARNING",
+      "priority": "CRITICAL",
+      "tags": [
+        "flutter",
+        "workflow",
+        "run"
+      ],
+      "session": "2026-10-14-session",
+      "ts": "2026-10-14T17:20:55Z",
+      "hash": "b6f3c02f714dbdc8d2090072fc684c53daf4575ff307851349a23e5723f9bab1",
+      "chain_ref": ""
+    },
+    {
+      "text": "Whitepaper v2.0 написан целиком. Ключевые обновления от v1.0: (1) Максимум 21 000 000 000 (было 21 000 000); (2) Целевая цена \\.10 за AIX (зафиксирована); (3) Добавлены разделы: AIX Brain (#AI-1, 19 инструментов, безопасность через NullSigner/CLISigner), AI Memory (#AI-2), Faucet; (4) Обновлена токеномика — комиссии: send 0.1% (майнеру), swap 0.3% (0.1% founder / 0.2% LP); (5) Системные кошельки founder + treasury + Treasury DAO; (6) Время блока ~20 минут (сложность 5); (7) Swap теперь на 20 токенов без -SIM; (8) Roadmap актуализирован: Фазы 0-3 ЗАВЕРШЕНЫ, Фаза 4 (интеграция с миром) Q1-Q3 2027 включает Custom Network, Chainlist, Pay with AIX, эксплорер, wAIX мост на BSC, листинги CoinGecko/CMC/BingX/Bitget/MEXC; (9) Мобильный кошелёк Flutter указан как готовый (Android+Windows); (10) Убран раздел 'Команда' с прежними обещаниями — сейчас 1 основатель + 1 AI; (11) В раздел 'Что сделано' добавлены 13 протоколов и 77 тестов. Файл ~400 строк, готов к публикации на GitHub и к показу инвесторам.",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "whitepaper",
+        "docs",
+        "v2"
+      ],
+      "session": "2026-10-14-session",
+      "ts": "2026-10-14T17:36:43Z",
+      "hash": "0cbe599decc49980928d1dd68507f2b5b8f106723eeba2a1785dd6ff36c22e9c",
+      "chain_ref": ""
+    },
+    {
+      "text": "Faucet-фикс работает. Причина была: _faucet_send создавал Transaction с fee=0, а transaction.py требует 0.1%. Патч scripts/patch_faucet_fee.py добавляет calculate_fee. После этого кран выдаёт AIX корректно. Ollama слушает 127.0.0.1:11434 (PID 3296). Следующий вопрос: Brain ошибка 10061 в мобильном приложении при запросах.",
+      "kind": "BUG_FIXED",
+      "priority": "IMPORTANT",
+      "tags": [
+        "faucet",
+        "fix",
+        "ollama"
+      ],
+      "session": "2026-10-14-session",
+      "ts": "2026-10-14T18:39:27Z",
+      "hash": "fa249373ea8bdf08b0db216e11ba0a53684ea7b957cf5f2a52856c91a64be1cc",
+      "chain_ref": ""
+    },
+    {
+      "text": "Мультичейн M1+M2 завершён. Файлы: (1) mobile/flutter_app/lib/crypto/multichain.dart — функции btcAddressFromPrivateKey (Base58Check 0x00 + hash160), ethAddressFromPrivateKey (Keccak256 uncompressed pubkey, EIP-55 checksum), addressesFromPrivateKeyHex возвращает все три адреса разом. (2) mobile/flutter_app/lib/screens/multichain_screen.dart — экран показывает три адреса (AIX/BTC/ETH) от одного ключа, read-only, кнопка показать ключ с подтверждением, TON отмечен как 'не реализовано' (нужна Ed25519). (3) main.dart обновлён — добавлен роут /multichain. (4) home_screen.dart — добавлена плитка 'Мультичейн' между Faucet и Brain. Логика: AIX, BTC, ETH используют одну кривую secp256k1 — тот же приватный ключ даёт три адреса, меняется только обёртка. TON на Ed25519 — отдельный этап. Отправка BTC/ETH пока не реализована — будет вместе с мостом (этап F плана).",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "multichain",
+        "btc",
+        "eth",
+        "flutter",
+        "done"
+      ],
+      "session": "2026-10-14-session",
+      "ts": "2026-10-14T19:07:29Z",
+      "hash": "9c019ef14d17c057d98eb04dc1119ebc70e9ef412af035ca70529abe2048d0fc",
+      "chain_ref": ""
+    },
+    {
+      "text": "ИСПРАВЛЕНИЕ ОШИБКИ: 1 AIX = 100 ДОЛЛАРОВ США. НЕ \\.10! Я (AI) ошибочно написал \\.10 в одном из сообщений, перепутав с промежуточным вариантом для supply 71 млрд (который был отклонён). ПРАВИЛЬНО: MAX_SUPPLY=21 000 000 000 AIX, цена 1 AIX = \\ USD. Проверить везде: AIX_PRICE_USD=100.0 (в home_screen.dart, setup_swap_pools.py). Капитализация при 100% выпуске = \\.1 триллиона (на уровне Bitcoin). Не менять без явного решения основателя. Это КРИТИЧЕСКИ важное экономическое решение.",
+      "kind": "DECISION",
+      "priority": "CRITICAL",
+      "tags": [
+        "price",
+        "aix",
+        "economy",
+        "fix",
+        "critical"
+      ],
+      "session": "2026-10-14-session",
+      "ts": "2026-10-14T19:15:34Z",
+      "hash": "fe9e8e857bfdf7250b18caab36d0b29f366b808b900e7da68e6c853f80c703b3",
+      "chain_ref": ""
+    },
+    {
+      "text": "14.10.2026: APK СОБРАН...",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "apk",
+        "android",
+        "build",
+        "done",
+        "flutter"
+      ],
+      "session": "2026-10-14-session",
+      "ts": "2026-10-14T20:58:43Z",
+      "hash": "87e9442bb25de48063f032338cec035f6bf4668fbe63315d47a6e6575b84ae9a",
+      "chain_ref": ""
+    },
+    {
+      "text": "КРИТИЧНО: DECIMALS изменён с 18 на 8 (как Bitcoin). 1 AIX = 10^8 сатоши. Причина: Dart int = 64 бита, максимум 9.2×10^18. При DECIMALS=18 50 AIX = 5×10^19 — не влезало в int64. При 8: 21 млрд AIX = 2.1×10^18 — с запасом. Заменено 63 вхождения 10**18 на config.SATOSHI или 10**8 в: config.py, swap.py (26), server.py (21), cli/main.py (7), setup_swap_pools.py (1), block.py (2), mempool.py (2), poc.py (3). Все бэкапы *.dec.bak. Dart-нода: genesis hash Dart СОВПАДАЕТ с Python байт-в-байт — 2e1cfa82... и c4416424... Созданы модули: lib/node/config_node.dart, lib/node/models/{block,chain,mempool,transaction}.dart, lib/node/storage/chain_storage.dart, lib/node/local_node.dart. Тесты: test/node_base_test.dart — 6/6. API pointycastle 4.0: ECCurve.decodePoint(bytes) один аргумент, ECPublicKey(Q, curve), ECDSASigner(). Формат: transaction.toSigningPayload() = {amount, fee, message, recipient, sender, timestamp} — ключи по алфавиту, JSON без пробелов, unicode \\uXXXX. Старые кошельки удалены, цепочка сброшена, ID кошельков пересоздаются. Дальше: LocalNode в UI (node_screen.dart), переключение local/remote в node_client.dart, новый дизайн (Apple Wallet + Phantom + Trust, горизонтальный скролл фишек внизу).",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "decimals",
+        "dart",
+        "node",
+        "crypto",
+        "bitcoin-standard"
+      ],
+      "session": "2026-10-15-session",
+      "ts": "2026-10-15T07:19:57Z",
+      "hash": "f736302c5557d79343d6e779aa38cc7245d79cd256af6039589ea38bf0a7c76e",
+      "chain_ref": ""
+    },
+    {
+      "text": "Сессия 2026-10-15: DECIMALS 18→8 (Bitcoin-стандарт), genesis Dart==Python байт-в-байт. Ускорение майнинга: scripts/patch_mine_speed.py добавил MINE_SAVE_EVERY_N_BLOCKS (100=быстро, 1=безопасно) и MINE_BROADCAST (off=быстро). Для быстрого майнинга: patch_config.py --mine-save-every 100 --mine-broadcast off. После майнинга: --mine-save-every 1 --mine-broadcast on. При MINE_BROADCAST=off нода B отстаёт — синхронизировать через Copy-Item data\\chain_A.json data\\chain_B.json. Финальный save в lifespan сохраняет всё при stop_all.ps1. Модули Dart готовы: lib/node/{config_node,local_node}.dart, lib/node/models/{block,chain,mempool,transaction}.dart, lib/node/storage/chain_storage.dart. Тесты node_base_test 6/6. Следующий шаг: lib/screens/node_screen.dart (управление локальной нодой) + переключение local/remote в node_client.dart, потом новый дизайн (Apple Wallet + Phantom + Trust + горизонтальный скролл фишек внизу).",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "decimals",
+        "mining",
+        "flutter",
+        "node",
+        "done"
+      ],
+      "session": "2026-10-15-session",
+      "ts": "2026-10-15T09:45:08Z",
+      "hash": "9abcc0a632e342c6fdeeea58a81eb6cf61c93f3f1418fdd434ef18e5b6a0f7bf",
+      "chain_ref": ""
+    },
+    {
+      "text": "Пофиксил баг с mempool",
+      "kind": "BUG_FIXED",
+      "priority": "IMPORTANT",
+      "tags": [
+        "mempool",
+        "chain"
+      ],
+      "session": "2026-10-15-session",
+      "ts": "2026-10-15T14:40:29Z",
+      "hash": "4c49db90b126eb8ca9be4047c17b4309762bcc927f1a455efd770469b77f76e6",
+      "chain_ref": ""
+    },
+    {
+      "text": "Начало сессии",
+      "kind": "SESSION_START",
+      "priority": "NORMAL",
+      "tags": [],
+      "session": "2026-10-15-session",
+      "ts": "2026-10-15T14:40:30Z",
+      "hash": "6604fff88c843b2317dc7c9e16b69d685c819f870c5bedae649dd2df65d12003",
+      "chain_ref": ""
+    },
+    {
+      "text": "Сессия 2026-10-17: мобильная нода AIX OS работает. Local/Remote переключение, синхронизация с внешней, майнинг на Local. Кошелёк создан, баланс 100 AIX на remote. build Windows проходит. Следующий шаг: send_screen.dart через ActiveNodeService, потом публикация.",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "mobile",
+        "local-node",
+        "flutter",
+        "milestone"
+      ],
+      "session": "2026-10-17-session",
+      "ts": "2026-10-17T12:06:51Z",
+      "hash": "a5611683d6e045937f8b5a7aa6f3f2d912f5a43d8f2154a2a4f05f228053d6be",
+      "chain_ref": ""
+    },
+    {
+      "text": "Сессия 2026-10-17: Успешная интеграция мобильной ноды AIX OS. Отправка, история, майнинг работают. Python-нода ускорена кэшированием в core/chain.py (TimeoutException устранены). История показывает правильные суммы (10^8). Следующий шаг: публикация или экраны протоколов.",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "mobile",
+        "caching",
+        "release"
+      ],
+      "session": "2026-10-17-session",
+      "ts": "2026-10-17T13:00:22Z",
+      "hash": "6f7bc5d774eba300ebb14ea9f7a68b0f3f45b5815e35ca698d76b1d33cfc469f",
+      "chain_ref": ""
+    },
+    {
+      "text": "Сессия 2026-10-17: ПОЛНЫЙ УСПЕХ. Мобильное приложение AIX OS собрано: все 12 протоколов открываются, встроенный мессенджер, реальные курсы CoinGecko, сжигание токенов с ключом, автономная майнинг-нода. AIX Brain (qwen2.5:3b) успешно отвечает на вопросы через мобильный интерфейс! Увеличен таймаут до 180 секунд. Готовы к релизу.",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "mobile",
+        "brain",
+        "release",
+        "milestone"
+      ],
+      "session": "2026-10-17-session",
+      "ts": "2026-10-17T15:10:48Z",
+      "hash": "e8c03231a725bf80550e5137ee1e1d9104f78115a583ecc0cfc40cae334b1bdf",
+      "chain_ref": ""
+    },
+    {
+      "text": "Сессия 2026-10-17: ГРАНДИОЗНЫЙ РЕЛИЗ. Мобильное приложение AIX OS готово: все 12 протоколов, встроенный мессенджер, реальные курсы CoinGecko, автономная майнинг-нода, AIX Brain (Ollama). Код опубликован на GitHub. Настроена сборка APK через виртуальный диск R: (обход кириллицы в путях). Следующая задача: реальный обмен криптовалюты и вывод в фиат (рубли на карту).",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "release",
+        "mobile",
+        "github",
+        "apk"
+      ],
+      "session": "2026-10-17-session",
+      "ts": "2026-10-17T15:53:50Z",
+      "hash": "bf1a8417e76b0f34db89cb3245acfc362e784e5bbe4f685cd1d502c33fc6cdd9",
+      "chain_ref": ""
+    },
+    {
+      "text": "Сессия 2026-10-17 (Архитектура фиата и мультичейна): 1) Вывод в рубли: делаем через встроенный P2P-обмен (как на Binance). Пользователи торгуют друг с другом, мы берем 0.1%. Это обходит лицензии ЦБ и банковские шлюзы. 2) Мультичейн: сейчас в UI видны только курсы. Нужно сделать плитки BTC/ETH кликабельными и показывать адреса/QR для приема (используя готовый multichain.dart). Реальную отправку BTC/ETH сделаем позже через внешние API (Blockchair/Infura), так как мобилка не потянет полные ноды. Стратегия: 'делаем как легче' — сначала UI и прием, потом сложная интеграция.",
+      "kind": "DECISION",
+      "priority": "CRITICAL",
+      "tags": [
+        "fiat",
+        "p2p",
+        "multichain",
+        "architecture",
+        "decision"
+      ],
+      "session": "2026-10-17-session",
+      "ts": "2026-10-17T16:50:54Z",
+      "hash": "e674a2c687fc2e18dd8b1f7dbfb9d0e785a7fd9f5db87eec1b276cdad42117d6",
+      "chain_ref": ""
+    },
+    {
+      "text": "Сессия 2026-10-17: APK AIX OS успешно собран (69.9MB) и установлен на Android-телефон. Проверена работа внешней ноды по локальному IP (192.168.0.38), настроен брандмауэр Windows. Brain на телефоне успешно отправляет запросы. Переходим к Мультичейн UI (плитки BTC/ETH с QR-кодами).",
+      "kind": "MILESTONE",
+      "priority": "CRITICAL",
+      "tags": [
+        "android",
+        "apk",
+        "mobile",
+        "milestone"
+      ],
+      "session": "2026-10-17-session",
+      "ts": "2026-10-17T17:11:35Z",
+      "hash": "30a9e339d5dbee2ef65d49ba1bc2207b3773cc636e17fdfdfeeb41068acd1f70",
+      "chain_ref": ""
+    },
+    {
+      "text": "Проблема с Brain на ПК: модель qwen2.5:3b вызывает таймаут из-за нехватки RAM (одновременно с 85k блоков). Для тестов использовать модель легче (qwen2.5:0.5b или llama3.2:1b). В релизе (на телефоне) заменить на облачный API (OpenAI/Claude) или использовать локальную Ollama на телефоне.",
+      "kind": "LEARNING",
+      "priority": "IMPORTANT",
+      "tags": [
+        "brain",
+        "ollama",
+        "performance"
+      ],
+      "session": "2026-10-17-session",
+      "ts": "2026-10-17T17:15:10Z",
+      "hash": "35d366142a739b71e7d916e0a7f8620fbf70d4916555893b8ea84e5f1e2c463b",
+      "chain_ref": ""
+    }
+  ]
+}

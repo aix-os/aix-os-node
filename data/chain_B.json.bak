@@ -1,0 +1,487 @@
+{
+  "height": 17,
+  "difficulty": 3,
+  "chain": [
+    {
+      "index": 0,
+      "timestamp": 1735689600.0,
+      "transactions": [],
+      "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "nonce": 0,
+      "hash": "c44164248f64b0923ec76fbe78c4f6f59bb2477a28c3a5bec4dcbbfb5778df22",
+      "merkle_root": "2e1cfa82b035c26cbbbdae632cea070514eb8b773f616aaeaf668e2f0be8f10d"
+    },
+    {
+      "index": 1,
+      "timestamp": 1791788998.4053469,
+      "transactions": [
+        {
+          "sender": "COINBASE",
+          "recipient": "AIXTA5WAvDBAifiZuYfwfxM57Ajn8kGcG6xj2",
+          "amount": 50000000000000000000,
+          "timestamp": 1791788998.405321,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "AIX OS — майнинг награда"
+        }
+      ],
+      "previous_hash": "c44164248f64b0923ec76fbe78c4f6f59bb2477a28c3a5bec4dcbbfb5778df22",
+      "nonce": 4030,
+      "hash": "0000de2e214beb212cedfc5e51a46171b16129c44569a78d7d902b1ea86e33f7",
+      "merkle_root": "682d44d4642df41643a977021b127a27b7df7f8140cd59c6931b8b65b37a656a"
+    },
+    {
+      "index": 2,
+      "timestamp": 1791789008.8465838,
+      "transactions": [
+        {
+          "sender": "COINBASE",
+          "recipient": "AIXTA5WAvDBAifiZuYfwfxM57Ajn8kGcG6xj2",
+          "amount": 50000000000000000000,
+          "timestamp": 1791789008.8465698,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "AIX OS — майнинг награда"
+        }
+      ],
+      "previous_hash": "0000de2e214beb212cedfc5e51a46171b16129c44569a78d7d902b1ea86e33f7",
+      "nonce": 20481,
+      "hash": "0000ebdfd11a2ffe04ce0f3f019c283706bb81078e465aebf1d3d86b1d854979",
+      "merkle_root": "51936d01f76241e8277e835bc24de8133eda36c88f6eaf34b48e48585ed8129f"
+    },
+    {
+      "index": 3,
+      "timestamp": 1791789018.1882336,
+      "transactions": [
+        {
+          "sender": "COINBASE",
+          "recipient": "AIXTA5WAvDBAifiZuYfwfxM57Ajn8kGcG6xj2",
+          "amount": 50000000000000000000,
+          "timestamp": 1791789018.1882203,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "AIX OS — майнинг награда"
+        }
+      ],
+      "previous_hash": "0000ebdfd11a2ffe04ce0f3f019c283706bb81078e465aebf1d3d86b1d854979",
+      "nonce": 5955,
+      "hash": "000016cad5bc04c7f9c25e0d75e9f340790b19af4eaa47672acbbd196f1f1f7e",
+      "merkle_root": "41382cbb9a8047ebdac89b81a18a8a1bb34332b5e1f9bf445e82620d515244f7"
+    },
+    {
+      "index": 4,
+      "timestamp": 1791789036.9536831,
+      "transactions": [
+        {
+          "sender": "COINBASE",
+          "recipient": "AIXTA5WAvDBAifiZuYfwfxM57Ajn8kGcG6xj2",
+          "amount": 50000000000000000000,
+          "timestamp": 1791789036.9536757,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "AIX OS — майнинг награда"
+        }
+      ],
+      "previous_hash": "000016cad5bc04c7f9c25e0d75e9f340790b19af4eaa47672acbbd196f1f1f7e",
+      "nonce": 8776,
+      "hash": "0000f9a3a0ff57f53c0921e6a6556ca4441fbe47f8180934857b60ea962895df",
+      "merkle_root": "fe20ff0bc156dfec5803aec5e535aa297424dfed4420e65e3c49831cba1984ed"
+    },
+    {
+      "index": 5,
+      "timestamp": 1791789525.7573097,
+      "transactions": [
+        {
+          "sender": "COINBASE",
+          "recipient": "AIXTA5WAvDBAifiZuYfwfxM57Ajn8kGcG6xj2",
+          "amount": 50000000000000000000,
+          "timestamp": 1791789525.7573004,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "AIX OS — майнинг награда"
+        }
+      ],
+      "previous_hash": "0000f9a3a0ff57f53c0921e6a6556ca4441fbe47f8180934857b60ea962895df",
+      "nonce": 29941,
+      "hash": "0000dd7a445ac00d5ac8d8ee9c88f6c3523f1e472de31c9c86799a7f1b15adf4",
+      "merkle_root": "41fa2147652ff8636da40a9ce395190e20bc9219afdf32ea3dd6bf058d223420"
+    },
+    {
+      "index": 6,
+      "timestamp": 1791789535.6376922,
+      "transactions": [
+        {
+          "sender": "COINBASE",
+          "recipient": "AIXTA5WAvDBAifiZuYfwfxM57Ajn8kGcG6xj2",
+          "amount": 50000000000000000000,
+          "timestamp": 1791789535.6376681,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "AIX OS — майнинг награда"
+        }
+      ],
+      "previous_hash": "0000dd7a445ac00d5ac8d8ee9c88f6c3523f1e472de31c9c86799a7f1b15adf4",
+      "nonce": 5764,
+      "hash": "0000f1b45c02aff694d2f1c4fa8f0dddbdf1252db4558910ed3ae531218d1d15",
+      "merkle_root": "2a70aa04ec8a82ed5e21ac10c74c584cf165c30c35b922d7c2b2c77709e5f61b"
+    },
+    {
+      "index": 7,
+      "timestamp": 1791789544.2865815,
+      "transactions": [
+        {
+          "sender": "COINBASE",
+          "recipient": "AIXTA5WAvDBAifiZuYfwfxM57Ajn8kGcG6xj2",
+          "amount": 50000000000000000000,
+          "timestamp": 1791789544.2865722,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "AIX OS — майнинг награда"
+        }
+      ],
+      "previous_hash": "0000f1b45c02aff694d2f1c4fa8f0dddbdf1252db4558910ed3ae531218d1d15",
+      "nonce": 22967,
+      "hash": "0000272327bf5f65c70204b1603bf9208b69eb4a24c03f95ea02a3030b57d16c",
+      "merkle_root": "3c720466f704ebafb6f715be7a6eb2feb4ed793a6e638eeffaf9d470e33370a9"
+    },
+    {
+      "index": 8,
+      "timestamp": 1791790681.0909526,
+      "transactions": [
+        {
+          "sender": "COINBASE",
+          "recipient": "AIXTYTXqm8WBFE6iX9UCFsp3qbF3VoKjAMxG8",
+          "amount": 50000000000000000000,
+          "timestamp": 1791790681.0908835,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "AIX OS — майнинг награда"
+        },
+        {
+          "sender": "AIXTA5WAvDBAifiZuYfwfxM57Ajn8kGcG6xj2",
+          "recipient": "AIXTDTWaRqhPzdfmGSgp66G1vg9Rtma1k5WKC",
+          "amount": 209999999999999967232,
+          "timestamp": 1791790668.8030927,
+          "fee": 0,
+          "public_key": "02a63e26edaf6c18e92268ee5c7995e6754ba6fb10ea7d3524374da262bf09f740",
+          "signature": "8bd3d6559f15269fc66190d4ddbec5db282fe89ed6a07d3c62dc99bcf843bcdb3fd9eb3a0dc38b85a9bf5fceb524b4203e1095014ac5021063181636fdf9b67c",
+          "message": "Прощайте"
+        },
+        {
+          "sender": "AIXTA5WAvDBAifiZuYfwfxM57Ajn8kGcG6xj2",
+          "recipient": "AIXTXkTCmPUzxkdjdB8eYvga9P7WKG8gTFArM",
+          "amount": 140000000000000000000,
+          "timestamp": 1791790668.8195233,
+          "fee": 0,
+          "public_key": "02a63e26edaf6c18e92268ee5c7995e6754ba6fb10ea7d3524374da262bf09f740",
+          "signature": "07f02f459b35d77fd1901ce56352d8e2a211ea0ee94d23e7edbb0bb4a2efc119ebd0eb0da66e885f764cf588658fd8eb0627b95bd096b4deffc1abe1ab5d5f27",
+          "message": "Прощайте"
+        }
+      ],
+      "previous_hash": "0000272327bf5f65c70204b1603bf9208b69eb4a24c03f95ea02a3030b57d16c",
+      "nonce": 34024,
+      "hash": "00009c80afae7529a05189b7d1c02b3b9f9e1842e4a4e46c923eb7144e2d2115",
+      "merkle_root": "7619218d2a2d8a29eb8051f5d99b39ffe0dcf4a1fb1924bb73795e5ac9cfa820"
+    },
+    {
+      "index": 9,
+      "timestamp": 1791791939.250634,
+      "transactions": [
+        {
+          "sender": "COINBASE",
+          "recipient": "AIXTA5WAvDBAifiZuYfwfxM57Ajn8kGcG6xj2",
+          "amount": 50000000000000000000,
+          "timestamp": 1791791939.2506166,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "AIX OS — майнинг награда"
+        }
+      ],
+      "previous_hash": "00009c80afae7529a05189b7d1c02b3b9f9e1842e4a4e46c923eb7144e2d2115",
+      "nonce": 83723,
+      "hash": "00008cac08046e05fe98a1a9c1e16e18222acd490b36fee54d5a4b5792cbd842",
+      "merkle_root": "33abd4cec7b1dc11f12256b742d3580cde7ab7ee9a42a0e61e45a6ff79e55dce"
+    },
+    {
+      "index": 10,
+      "timestamp": 1791791954.2910051,
+      "transactions": [
+        {
+          "sender": "COINBASE",
+          "recipient": "AIXTA5WAvDBAifiZuYfwfxM57Ajn8kGcG6xj2",
+          "amount": 50000000000000000000,
+          "timestamp": 1791791954.2909899,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "AIX OS — майнинг награда"
+        }
+      ],
+      "previous_hash": "00008cac08046e05fe98a1a9c1e16e18222acd490b36fee54d5a4b5792cbd842",
+      "nonce": 7060,
+      "hash": "000abc56201f6cfcc499307b8948fbd49839a2431050596a63cf041a7637e756",
+      "merkle_root": "5f3dcbb19ea9266c23db8253820f4ed717717bffeb9369e89db33f411371a3f0"
+    },
+    {
+      "index": 11,
+      "timestamp": 1791792084.4714696,
+      "transactions": [
+        {
+          "sender": "COINBASE",
+          "recipient": "AIXTYTXqm8WBFE6iX9UCFsp3qbF3VoKjAMxG8",
+          "amount": 50000000000000000000,
+          "timestamp": 1791792084.4714143,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "AIX OS — майнинг награда"
+        },
+        {
+          "sender": "AIXTA5WAvDBAifiZuYfwfxM57Ajn8kGcG6xj2",
+          "recipient": "AIXTDTWaRqhPzdfmGSgp66G1vg9Rtma1k5WKC",
+          "amount": 5000000000000000000,
+          "timestamp": 1791792062.6228333,
+          "fee": 0,
+          "public_key": "02a63e26edaf6c18e92268ee5c7995e6754ba6fb10ea7d3524374da262bf09f740",
+          "signature": "3f147eaa2744a611f88ce521fcf14e71d4c43c7201de74cba19126b9565c86b33a9468a67d0969bd18f33ee6aab45d85e158bc5a5866769005d83084d98f327f",
+          "message": "Через AIX-ID!"
+        },
+        {
+          "sender": "LOTTERY",
+          "recipient": "AIXTA5WAvDBAifiZuYfwfxM57Ajn8kGcG6xj2",
+          "amount": 100000000000000000000,
+          "timestamp": 1791792084.471515,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "🎰 AIX Lottery — счастливый блок!"
+        }
+      ],
+      "previous_hash": "000abc56201f6cfcc499307b8948fbd49839a2431050596a63cf041a7637e756",
+      "nonce": 330,
+      "hash": "0009d0cbc5163e6a60f0a89fffe28b05a6d650b506e3671e3ea453062d7d4faf",
+      "merkle_root": "ed9ac95d0cca82b4ca29399e59cf41a143dace776a501c6618321907a416a612"
+    },
+    {
+      "index": 12,
+      "timestamp": 1791793479.0013564,
+      "transactions": [
+        {
+          "sender": "COINBASE",
+          "recipient": "AIXTYTXqm8WBFE6iX9UCFsp3qbF3VoKjAMxG8",
+          "amount": 50000000000000000000,
+          "timestamp": 1791793479.001305,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "AIX OS — майнинг награда"
+        },
+        {
+          "sender": "AIXTA5WAvDBAifiZuYfwfxM57Ajn8kGcG6xj2",
+          "recipient": "BURN",
+          "amount": 100000000000000000000,
+          "timestamp": 1791793456.6386375,
+          "fee": 0,
+          "public_key": "02a63e26edaf6c18e92268ee5c7995e6754ba6fb10ea7d3524374da262bf09f740",
+          "signature": "90ba2145cfe25fadd615676d2e75b8015ad12b923452936c5ff4aff212598f8718fbefaf33fa1ee45b49c8bce5d41a6aa0b65ea7234789717092ca85f8ce26b4",
+          "message": "🔥 Burn-to-Mint: Уголёк"
+        },
+        {
+          "sender": "LOTTERY",
+          "recipient": "AIXTA5WAvDBAifiZuYfwfxM57Ajn8kGcG6xj2",
+          "amount": 100000000000000000000,
+          "timestamp": 1791793479.001397,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "🎰 AIX Lottery — счастливый блок!"
+        }
+      ],
+      "previous_hash": "0009d0cbc5163e6a60f0a89fffe28b05a6d650b506e3671e3ea453062d7d4faf",
+      "nonce": 2112,
+      "hash": "00020d11f261d64c83256ac7df434cba6d42e6161c32c7ad78a25426b7ea6fbb",
+      "merkle_root": "1debdd19ea4804bdc0432979d7b1b308208e3c3cb9e453d4dc078ff3b0453df1"
+    },
+    {
+      "index": 13,
+      "timestamp": 1791794740.4013474,
+      "transactions": [
+        {
+          "sender": "COINBASE",
+          "recipient": "AIXTYTXqm8WBFE6iX9UCFsp3qbF3VoKjAMxG8",
+          "amount": 50000000000000000000,
+          "timestamp": 1791794740.4012978,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "AIX OS — майнинг награда"
+        },
+        {
+          "sender": "AIXTDTWaRqhPzdfmGSgp66G1vg9Rtma1k5WKC",
+          "recipient": "AIXTA5WAvDBAifiZuYfwfxM57Ajn8kGcG6xj2",
+          "amount": 5000000000000000000,
+          "timestamp": 1791794543.70993,
+          "fee": 0,
+          "public_key": "023363a25151f5dc0150611e030b90e8d9159b56e855eafc71dde2a17dbc3fdd1f",
+          "signature": "5af90df79e5cf03c4c398af43b5ca76266e4df0da1110a754482cb895b9b684fa51d57bddf53056d91769aaf7f67f85066dc50ceb148bf8a593a8ade35afbac3",
+          "message": "По номеру!"
+        }
+      ],
+      "previous_hash": "00020d11f261d64c83256ac7df434cba6d42e6161c32c7ad78a25426b7ea6fbb",
+      "nonce": 3662,
+      "hash": "000ae4740ac451c490e95e78dbbc1ce61c438092e1db98810622392a1b5d85f9",
+      "merkle_root": "dbcfb36c7eb31ed96934e4f4cff65b709ff95ca93732eef6d1e30782f5e6b82a"
+    },
+    {
+      "index": 14,
+      "timestamp": 1791804952.475592,
+      "transactions": [
+        {
+          "sender": "COINBASE",
+          "recipient": "AIXTYTXqm8WBFE6iX9UCFsp3qbF3VoKjAMxG8",
+          "amount": 50000000000000000000,
+          "timestamp": 1791804952.475544,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "AIX OS — майнинг награда"
+        },
+        {
+          "sender": "AIXTA5WAvDBAifiZuYfwfxM57Ajn8kGcG6xj2",
+          "recipient": "POC-POOL",
+          "amount": 150000000000000000000,
+          "timestamp": 1791804944.6555057,
+          "fee": 0,
+          "public_key": "02a63e26edaf6c18e92268ee5c7995e6754ba6fb10ea7d3524374da262bf09f740",
+          "signature": "3745c6341ce29148654ee2c93afde14228fe0812fec77bf7756ed7e4eeaf328bb306941022c528a0ca0f04be885b5f04feff79d998a58e7e4a627304a52967b9",
+          "message": "💚 Donation to PoC pool"
+        }
+      ],
+      "previous_hash": "000ae4740ac451c490e95e78dbbc1ce61c438092e1db98810622392a1b5d85f9",
+      "nonce": 469,
+      "hash": "000ede06f0c53986ff0ebf0d9e6a094b71a62c666c6fd21e0af7ff3fdb688cbd",
+      "merkle_root": "5825145621f0bf8b7832d05fd73bf3459c8386dc6fb2a0ba170dce567fb3465f"
+    },
+    {
+      "index": 15,
+      "timestamp": 1791804988.377285,
+      "transactions": [
+        {
+          "sender": "COINBASE",
+          "recipient": "AIXTYTXqm8WBFE6iX9UCFsp3qbF3VoKjAMxG8",
+          "amount": 50000000000000000000,
+          "timestamp": 1791804988.3772702,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "AIX OS — майнинг награда"
+        },
+        {
+          "sender": "LOTTERY",
+          "recipient": "AIXTXkTCmPUzxkdjdB8eYvga9P7WKG8gTFArM",
+          "amount": 100000000000000000000,
+          "timestamp": 1791804988.377327,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "🎰 AIX Lottery"
+        }
+      ],
+      "previous_hash": "000ede06f0c53986ff0ebf0d9e6a094b71a62c666c6fd21e0af7ff3fdb688cbd",
+      "nonce": 2805,
+      "hash": "000e4ff16cac7193e3d2ea4ac87c32dee7e2c4c32cc274ba23e0206e52970516",
+      "merkle_root": "591f81ea77a1453f23ddf1745384982c095cac8539a6440d9520a6ddd6243f9a"
+    },
+    {
+      "index": 16,
+      "timestamp": 1791805121.0864108,
+      "transactions": [
+        {
+          "sender": "COINBASE",
+          "recipient": "AIXTYTXqm8WBFE6iX9UCFsp3qbF3VoKjAMxG8",
+          "amount": 50000000000000000000,
+          "timestamp": 1791805121.0863388,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "AIX OS — майнинг награда"
+        },
+        {
+          "sender": "POC-POOL",
+          "recipient": "AIXTDTWaRqhPzdfmGSgp66G1vg9Rtma1k5WKC",
+          "amount": 100000000000000000000,
+          "timestamp": 1791805103.196967,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "🧬 PoC reward: POC-ZAW8-WG89 — Реализовал P2P-модуль"
+        },
+        {
+          "sender": "LOTTERY",
+          "recipient": "AIXTA5WAvDBAifiZuYfwfxM57Ajn8kGcG6xj2",
+          "amount": 100000000000000000000,
+          "timestamp": 1791805121.0864575,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "🎰 AIX Lottery"
+        }
+      ],
+      "previous_hash": "000e4ff16cac7193e3d2ea4ac87c32dee7e2c4c32cc274ba23e0206e52970516",
+      "nonce": 93,
+      "hash": "000de9f7c8cab5db1272d4b36f0ab2c69002f8dc926be066a73430d414e463fa",
+      "merkle_root": "f9aa3638650888ce9cd9bb41458eb3c785a022950edbe1531f92c6d093c263cf"
+    },
+    {
+      "index": 17,
+      "timestamp": 1791808349.2682133,
+      "transactions": [
+        {
+          "sender": "COINBASE",
+          "recipient": "AIXTYTXqm8WBFE6iX9UCFsp3qbF3VoKjAMxG8",
+          "amount": 50000000000000000000,
+          "timestamp": 1791808349.2681568,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "AIX OS — майнинг награда"
+        },
+        {
+          "sender": "POC-POOL",
+          "recipient": "AIXTA5WAvDBAifiZuYfwfxM57Ajn8kGcG6xj2",
+          "amount": 50000000000000000000,
+          "timestamp": 1791808334.6916578,
+          "fee": 0,
+          "public_key": "",
+          "signature": "",
+          "message": "🧬 PoC reward: POC-SX3Z-ASGF — алиса"
+        }
+      ],
+      "previous_hash": "000de9f7c8cab5db1272d4b36f0ab2c69002f8dc926be066a73430d414e463fa",
+      "nonce": 903,
+      "hash": "000597c8fc1d40ea8a01f5c623ae95f1f5a8db361806e8bae41eb4c53c075dad",
+      "merkle_root": "f03d0918dd891f26f8d6b60022077039c1623e04f99f69369cee272911a21be5"
+    }
+  ],
+  "mempool": [
+    {
+      "sender": "AIXTA5WAvDBAifiZuYfwfxM57Ajn8kGcG6xj2",
+      "recipient": "AIXTDTWaRqhPzdfmGSgp66G1vg9Rtma1k5WKC",
+      "amount": 5000000000000000000,
+      "timestamp": 1791792062.6228333,
+      "fee": 0,
+      "public_key": "02a63e26edaf6c18e92268ee5c7995e6754ba6fb10ea7d3524374da262bf09f740",
+      "signature": "3f147eaa2744a611f88ce521fcf14e71d4c43c7201de74cba19126b9565c86b33a9468a67d0969bd18f33ee6aab45d85e158bc5a5866769005d83084d98f327f",
+      "message": "Через AIX-ID!"
+    }
+  ]
+}
