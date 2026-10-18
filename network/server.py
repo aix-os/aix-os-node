@@ -393,38 +393,6 @@ def create_app(port: int, data_file: str, self_url: str,
     faucet_path = Path(data_file).parent / f"faucet_{port}.json"
     faucet_manager = FaucetManager(faucet_path, blockchain=blockchain)
 
-    # ---- Faucet helpers ----
-
-    def _faucet_wallet_loader(name: str):
-        """Загрузить кошелёк-казначей."""
-        return Wallet.load(name)
-
-    def _faucet_send(sender_addr: str, recipient: str,
-                     amount_aix: float, private_key_hex: str) -> str:
-        """Отправить AIX от казначея получателю. Возвращает tx_id."""
-        from crypto.keys import private_key_from_bytes
-        amount_raw = int(amount_aix * config.SATOSHI)
-        # FAUCET-FEE-FIX: считаем комиссию 0.1%, чтобы прошло is_valid()
-        from core.transaction import calculate_fee
-        fee_raw = calculate_fee(amount_raw)
-        tx = Transaction(
-            sender=sender_addr,
-            recipient=recipient,
-            amount=amount_raw,
-            fee=fee_raw,
-            message="AIX faucet",
-        )
-        sk = private_key_from_bytes(bytes.fromhex(private_key_hex))
-        tx.sign_transaction(sk)
-        ok, msg = tx.is_valid()
-        if not ok:
-            raise ValueError(msg)
-        ok, msg = blockchain.mempool.add(tx)
-        if not ok:
-            raise ValueError(msg)
-        storage.save(blockchain)
-        peer_manager.broadcast_transaction(tx.to_dict())
-        return tx.tx_id()
 
 
     brain_config = BrainConfig.from_env()
@@ -1916,15 +1884,16 @@ def create_app(port: int, data_file: str, self_url: str,
         if xff:
             ip = xff.split(",")[0].strip()
 
-        ok, result = faucet_manager.claim(
-            address=req.address,
-            ip=ip,
-            wallet_loader=_faucet_wallet_loader,
-            sender=_faucet_send,
-        )
+        ok, result, tx_id = faucet_manager.claim(address=req.address, ip=ip)
         if not ok:
-            raise HTTPException(400, result.get("error", "не удалось"))
-        return result
+            raise HTTPException(400, result)
+        return {
+            "status": "sent",
+            "address": req.address,
+            "amount_aix": FAUCET_AMOUNT_AIX,
+            "tx_id": tx_id,
+            "treasury": "FAUCET (системный)",
+        }
 
     # =========================================================================
     # TRANSACTION SUBMIT (подписанная транзакция от кошелька)
