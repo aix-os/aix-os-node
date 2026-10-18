@@ -20,4 +20,5 @@ app = create_app(
     contacts_file="data/contacts_8010.json",
     swap_file="data/swap_8010.json",
     poc_file="data/poc_8010.json",
+    p2p_file="data/p2p_8010.json",
 )

@@ -52,6 +52,11 @@ from core.protocols.ai_memory import (
     AIMemoryManager, KINDS as AI_KINDS, PRIORITIES as AI_PRIORITIES,
     KIND_EMOJI, PRIORITY_EMOJI,
 )
+from core.protocols.p2p import (
+    P2PManager, P2POrder, SYSTEM_ESCROW_ADDRESS,
+    PAYMENT_METHODS as P2P_PAYMENT_METHODS,
+)
+
 from storage.db import ChainStorage
 from network.peer_manager import PeerManager
 from core.governance.dao import DAOManager
@@ -253,6 +258,42 @@ class AIRememberRequest(BaseModel):
     tags: list[str] = []
     session: str = ""
     chain_ref: str = ""
+class P2PCreateOrderRequest(BaseModel):
+    seller: str
+    amount_aix: float
+    price_rub_per_aix: float
+    min_amount_aix: float
+    max_amount_aix: float
+    payment_method: str = "card"
+    escrow_tx_id: str
+
+
+class P2PAcceptRequest(BaseModel):
+    buyer: str
+    deal_amount_aix: float
+
+
+class P2PConfirmPaidRequest(BaseModel):
+    buyer: str
+
+
+class P2PReleaseRequest(BaseModel):
+    seller: str
+
+
+class P2PCancelRequest(BaseModel):
+    seller: str
+
+
+class P2PDisputeRequest(BaseModel):
+    by: str
+    reason: str = ""
+
+
+class P2PChatRequest(BaseModel):
+    from_address: str
+    text: str
+
 
 
 class DAOCreateRequest(BaseModel):
@@ -319,7 +360,7 @@ def create_app(port: int, data_file: str, self_url: str,
                peers_file: str, gifts_file: str, timelocks_file: str,
                sbt_file: str, inheritance_file: str, id_file: str,
                burn_file: str, contacts_file: str, swap_file: str,
-               poc_file: str) -> FastAPI:
+               poc_file: str, p2p_file: str) -> FastAPI:
 
     storage = ChainStorage(data_file)
     loaded = storage.load()
@@ -343,6 +384,8 @@ def create_app(port: int, data_file: str, self_url: str,
     poc_manager = PoCManager(poc_file, blockchain=blockchain)
     ai_memory_path = Path(data_file).parent / "ai_memory.json"
     ai_memory = AIMemoryManager(ai_memory_path)
+    p2p_manager = P2PManager(p2p_file, blockchain=blockchain)
+
 
     dao_path = Path(data_file).parent / f"dao_{port}.json"
     dao_manager = DAOManager(dao_path, blockchain=blockchain, sbt_manager=sbt_manager, poc_manager=poc_manager)
@@ -2024,6 +2067,121 @@ def create_app(port: int, data_file: str, self_url: str,
         # Всё остальное — ошибка method not found
         return _err(-32601, f"Method not found: {method}")
 
+
+    # =========================================================================
+    # P2P ОБМЕН
+    # =========================================================================
+
+    @app.get("/p2p/payment_methods")
+    def p2p_payment_methods():
+        return {"methods": P2P_PAYMENT_METHODS}
+
+    @app.get("/p2p/stats")
+    def p2p_stats():
+        return p2p_manager.stats()
+
+    @app.get("/p2p/orders")
+    def p2p_list_orders():
+        orders = p2p_manager.list_open()
+        return {"count": len(orders), "orders": [o.to_dict() for o in orders]}
+
+    @app.get("/p2p/orders/all")
+    def p2p_list_all(limit: int = 100):
+        orders = p2p_manager.list_all(limit=limit)
+        return {"count": len(orders), "orders": [o.to_dict() for o in orders]}
+
+    @app.get("/p2p/orders/seller/{address}")
+    def p2p_by_seller(address: str):
+        addr = resolve_who(address)
+        orders = p2p_manager.list_by_seller(addr)
+        return {"count": len(orders), "orders": [o.to_dict() for o in orders]}
+
+    @app.get("/p2p/orders/buyer/{address}")
+    def p2p_by_buyer(address: str):
+        addr = resolve_who(address)
+        orders = p2p_manager.list_by_buyer(addr)
+        return {"count": len(orders), "orders": [o.to_dict() for o in orders]}
+
+    @app.post("/p2p/orders")
+    def p2p_create_order(req: P2PCreateOrderRequest):
+        seller_addr = resolve_who(req.seller)
+        amount_raw = int(req.amount_aix * config.SATOSHI)
+        min_raw = int(req.min_amount_aix * config.SATOSHI)
+        max_raw = int(req.max_amount_aix * config.SATOSHI)
+        ok, result = p2p_manager.create_order(
+            seller=seller_addr,
+            amount_raw=amount_raw,
+            price_rub_per_aix=req.price_rub_per_aix,
+            min_amount_raw=min_raw,
+            max_amount_raw=max_raw,
+            payment_method=req.payment_method,
+            escrow_tx_id=req.escrow_tx_id,
+        )
+        if not ok:
+            raise HTTPException(400, result)
+        o = p2p_manager.get(result)
+        return {"status": "created", "order": o.to_dict()}
+
+    @app.get("/p2p/orders/{order_id}")
+    def p2p_get_order(order_id: str):
+        o = p2p_manager.get(order_id)
+        if o is None:
+            raise HTTPException(404, "Ордер не найден")
+        return o.to_dict()
+
+    @app.post("/p2p/orders/{order_id}/accept")
+    def p2p_accept(order_id: str, req: P2PAcceptRequest):
+        buyer_addr = resolve_who(req.buyer)
+        deal_raw = int(req.deal_amount_aix * config.SATOSHI)
+        ok, msg = p2p_manager.accept_order(order_id, buyer_addr, deal_raw)
+        if not ok:
+            raise HTTPException(400, msg)
+        return {"status": "accepted", "order": p2p_manager.get(order_id).to_dict()}
+
+    @app.post("/p2p/orders/{order_id}/confirm_paid")
+    def p2p_confirm_paid(order_id: str, req: P2PConfirmPaidRequest):
+        buyer_addr = resolve_who(req.buyer)
+        ok, msg = p2p_manager.confirm_paid(order_id, buyer_addr)
+        if not ok:
+            raise HTTPException(400, msg)
+        return {"status": "ok", "order": p2p_manager.get(order_id).to_dict()}
+
+    @app.post("/p2p/orders/{order_id}/release")
+    def p2p_release(order_id: str, req: P2PReleaseRequest):
+        seller_addr = resolve_who(req.seller)
+        ok, msg = p2p_manager.release(order_id, seller_addr, blockchain=blockchain)
+        if not ok:
+            raise HTTPException(400, msg)
+        return {"status": "released", "tx_id": msg,
+                "order": p2p_manager.get(order_id).to_dict()}
+
+    @app.post("/p2p/orders/{order_id}/cancel")
+    def p2p_cancel(order_id: str, req: P2PCancelRequest):
+        seller_addr = resolve_who(req.seller)
+        ok, msg = p2p_manager.cancel(order_id, seller_addr, blockchain=blockchain)
+        if not ok:
+            raise HTTPException(400, msg)
+        return {"status": "cancelled", "tx_id": msg,
+                "order": p2p_manager.get(order_id).to_dict()}
+
+    @app.post("/p2p/orders/{order_id}/dispute")
+    def p2p_dispute(order_id: str, req: P2PDisputeRequest):
+        by_addr = resolve_who(req.by)
+        ok, msg = p2p_manager.dispute(order_id, by_addr, req.reason)
+        if not ok:
+            raise HTTPException(400, msg)
+        return {"status": "disputed",
+                "order": p2p_manager.get(order_id).to_dict()}
+
+    @app.post("/p2p/orders/{order_id}/chat")
+    def p2p_chat(order_id: str, req: P2PChatRequest):
+        from_addr = resolve_who(req.from_address)
+        ok, msg = p2p_manager.add_chat_message(order_id, from_addr, req.text)
+        if not ok:
+            raise HTTPException(400, msg)
+        return {"status": "ok",
+                "chat": p2p_manager.get(order_id).chat}
+
     # =========================================================================
     # P2P
     # =========================================================================
@@ -2202,6 +2360,7 @@ if __name__ == "__main__":
     parser.add_argument("--contacts", dest="contacts", default=None)
     parser.add_argument("--swap", dest="swap", default=None)
     parser.add_argument("--poc", dest="poc", default=None)
+    parser.add_argument("--p2p", default=None)
     parser.add_argument("--url", default=None)
     args = parser.parse_args()
 
@@ -2217,11 +2376,12 @@ if __name__ == "__main__":
     contacts_file = args.contacts or str(data_dir / f"contacts_{args.port}.json")
     swap_file = args.swap or str(data_dir / f"swap_{args.port}.json")
     poc_file = args.poc or str(data_dir / f"poc_{args.port}.json")
+    p2p_file = args.p2p or str(data_dir / f"p2p_{args.port}.json")
 
     app = create_app(args.port, args.data, self_url,
                      peers_file, gifts_file, timelocks_file, sbt_file,
                      inheritance_file, ids_file, burn_file, contacts_file,
-                     swap_file, poc_file)
+                     swap_file, poc_file, p2p_file)
 
     import uvicorn
     print(config.ASCII_LOGO)
@@ -2237,30 +2397,8 @@ if __name__ == "__main__":
     print(f"Contacts: {contacts_file}")
     print(f"Swap:     {swap_file}")
     print(f"PoC:      {poc_file}")
+    print(f"P2P:      {p2p_file}")
     print(f"Swagger:  {self_url}/docs")
     print()
 
     uvicorn.run(app, host=args.host, port=args.port, log_level="warning")
-
-# =============================================================================
-# Faable Deployment Init
-# =============================================================================
-import os
-
-if __name__ != "__main__":
-    _port = int(os.environ.get("PORT", 8010))
-    app = create_app(
-        port=_port,
-        data_file="data/chain_A.json",
-        self_url=f"http://0.0.0.0:{_port}",
-        peers_file="data/peers_8010.json",
-        gifts_file="data/gifts_8010.json",
-        timelocks_file="data/timelocks_8010.json",
-        sbt_file="data/sbt_8010.json",
-        inheritance_file="data/inheritance_8010.json",
-        id_file="data/ids_8010.json",
-        burn_file="data/burn_8010.json",
-        contacts_file="data/contacts_8010.json",
-        swap_file="data/swap_8010.json",
-        poc_file="data/poc_8010.json",
-    )

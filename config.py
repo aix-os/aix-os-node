@@ -44,7 +44,7 @@ MINE_SAVE_EVERY_N_BLOCKS = 1
 # False = быстро, но пиры отстают, синхронизировать потом
 MINE_BROADCAST = True
 
-INITIAL_BLOCK_REWARD = 50     # Награда за блок (в AIX)
+INITIAL_BLOCK_REWARD = 0.005  # $0.5 при цене $100
 HALVING_INTERVAL = 210_000    # Каждые 210k блоков награда делится на 2
 BLOCK_TIME_TARGET = 10        # Целевое время блока (секунды)
 
@@ -56,10 +56,10 @@ CHARITY_PERCENT = 0.01          # 1% транзакций идёт в AIX Kindne
 # ⛏️ МАЙНИНГ (Proof of Work)
 # =============================================================================
 
-INITIAL_DIFFICULTY = 1        # Стартовая сложность (кол-во нулей в хеше)
+INITIAL_DIFFICULTY = 5        # Стартовая сложность (кол-во нулей в хеше)
 DIFFICULTY_ADJUST_INTERVAL = 10  # Пересчёт сложности каждые N блоков
-MIN_DIFFICULTY = 1
-MAX_DIFFICULTY = 1           # Ограничение для MVP
+MIN_DIFFICULTY = 3
+MAX_DIFFICULTY = 7           # Ограничение для MVP (7 = ~1-30 сек/блок)
 
 GENESIS_TIMESTAMP = 1735689600  # 2025-01-01 00:00:00 UTC
 GENESIS_MESSAGE = (

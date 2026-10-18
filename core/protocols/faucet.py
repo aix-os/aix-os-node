@@ -27,7 +27,7 @@ from pathlib import Path
 from typing import Any
 
 # Размер выдачи
-FAUCET_AMOUNT_AIX = 10
+FAUCET_AMOUNT_AIX = 1
 
 # Лимиты
 COOLDOWN_IP_HOURS = 24
