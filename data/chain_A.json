@@ -1,0 +1,17 @@
+{
+  "height": 0,
+  "difficulty": 5,
+  "chain": [
+    {
+      "index": 0,
+      "timestamp": 1735689600.0,
+      "transactions": [],
+      "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "nonce": 0,
+      "hash": "c44164248f64b0923ec76fbe78c4f6f59bb2477a28c3a5bec4dcbbfb5778df22",
+      "merkle_root": "2e1cfa82b035c26cbbbdae632cea070514eb8b773f616aaeaf668e2f0be8f10d",
+      "difficulty": 0
+    }
+  ],
+  "mempool": []
+}
