@@ -1876,7 +1876,7 @@ def create_app(port: int, data_file: str, self_url: str,
 
     @app.post("/faucet/claim")
     def faucet_claim(req: FaucetClaimRequest, request: Request):
-        # Определяем IP: прямой или через X-Forwarded-For (туннель)
+        # Определяем IP
         ip = "?"
         if request.client and request.client.host:
             ip = request.client.host
@@ -1884,16 +1884,24 @@ def create_app(port: int, data_file: str, self_url: str,
         if xff:
             ip = xff.split(",")[0].strip()
 
-        ok, result, tx_id = faucet_manager.claim(address=req.address, ip=ip)
-        if not ok:
-            raise HTTPException(400, result)
-        return {
-            "status": "sent",
-            "address": req.address,
-            "amount_aix": FAUCET_AMOUNT_AIX,
-            "tx_id": tx_id,
-            "treasury": "FAUCET (системный)",
-        }
+        try:
+            ok, result, tx_id = faucet_manager.claim(address=req.address, ip=ip)
+            if not ok:
+                raise HTTPException(400, result)
+            return {
+                "status": "sent",
+                "address": req.address,
+                "amount_aix": FAUCET_AMOUNT_AIX,
+                "tx_id": tx_id,
+                "treasury": "FAUCET (системный)",
+            }
+        except Exception as e:
+            import traceback
+            return {
+                "error": str(e),
+                "traceback": traceback.format_exc(),
+                "type": type(e).__name__,
+            }
 
     # =========================================================================
     # TRANSACTION SUBMIT (подписанная транзакция от кошелька)
