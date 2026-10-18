@@ -10,3 +10,10 @@ data/chain_B.json
 data/*.json
 _fix_main.py
 data/
+__pycache__/
+*.pyc
+*.bak
+*.node.bak
+*.pbd.bak
+_add_fallback.py
+_fix_*.py
