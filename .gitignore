@@ -9,3 +9,4 @@ data/chain_A.json
 data/chain_B.json
 data/*.json
 _fix_main.py
+data/
