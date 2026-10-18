@@ -60,7 +60,7 @@ from core.protocols.p2p import (
 from storage.db import ChainStorage
 from network.peer_manager import PeerManager
 from core.governance.dao import DAOManager
-from core.protocols.faucet import FaucetManager
+from core.protocols.faucet import FaucetManager, FAUCET_AMOUNT_AIX
 from ai.brain import BrainAgent, BrainConfig
 
 
@@ -2402,25 +2402,3 @@ if __name__ == "__main__":
     print()
 
     uvicorn.run(app, host=args.host, port=args.port, log_level="warning")
-
-# FAABLE-FALLBACK: если запускают network.server:app — создаём app из env
-import os as _os
-if _os.environ.get("PORT"):
-    _port = int(_os.environ["PORT"])
-    _data_dir = Path("data")
-    app = create_app(
-        port=_port,
-        data_file=str(_data_dir / "chain_A.json"),
-        self_url=f"http://0.0.0.0:{_port}",
-        peers_file=str(_data_dir / f"peers_{_port}.json"),
-        gifts_file=str(_data_dir / f"gifts_{_port}.json"),
-        timelocks_file=str(_data_dir / f"timelocks_{_port}.json"),
-        sbt_file=str(_data_dir / f"sbt_{_port}.json"),
-        inheritance_file=str(_data_dir / f"inheritance_{_port}.json"),
-        id_file=str(_data_dir / f"ids_{_port}.json"),
-        burn_file=str(_data_dir / f"burn_{_port}.json"),
-        contacts_file=str(_data_dir / f"contacts_{_port}.json"),
-        swap_file=str(_data_dir / f"swap_{_port}.json"),
-        poc_file=str(_data_dir / f"poc_{_port}.json"),
-        p2p_file=str(_data_dir / f"p2p_{_port}.json"),
-    )
