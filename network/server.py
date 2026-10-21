@@ -363,13 +363,15 @@ def create_app(port: int, data_file: str, self_url: str,
                poc_file: str, p2p_file: str) -> FastAPI:
 
     storage = ChainStorage(data_file)
-    loaded = storage.load()
+    loaded = None if config.MINI_NODE else storage.load()
     if loaded is None:
         print(f"[{port}] Новая цепочка")
         blockchain = Blockchain()
         storage.save(blockchain)
     else:
-        print(f"[{port}] Загружено: высота {loaded.height()}")
+        print(f"[{port}] MINI_NODE={config.MINI_NODE}, loaded={loaded is not None}")
+        if loaded:
+            print(f"[{port}] Загружено: высота {loaded.height()}")
         blockchain = loaded
 
     peer_manager = PeerManager(self_url, storage_path=peers_file)

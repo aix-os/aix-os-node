@@ -18,6 +18,9 @@ COIN_NAME = "AIXcoin"
 COIN_SYMBOL = "AIX"
 VERSION = "0.1.0-alpha"
 
+# Мини-нода для Faable (не грузит полную цепочку, экономит RAM)
+MINI_NODE = os.getenv("AIX_MINI_NODE", "").lower() in ("1", "true", "yes")
+
 # Префикс адресов (как '1' у Bitcoin, '0x' у Ethereum)
 ADDRESS_PREFIX = "AIX"
 
